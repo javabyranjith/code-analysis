@@ -1,10 +1,11 @@
 /**
-*
-*Static code analysis example with Checkstyle, Findbugs, PMD and SonarQube
-*@author Ranjith Sekar
-*@since 2018, 19 June 
-*
-*/
+ *
+ * Static code analysis example with Checkstyle, Findbugs, PMD and SonarQube
+ * 
+ * @author Ranjith Sekar
+ * @since 2018, 19 June
+ *
+ */
 
 plugins {
     id 'eclipse'
@@ -13,16 +14,39 @@ plugins {
     id 'com.adarshr.test-logger' version '1.1.2'
    
     // Code Analysis
-    //id 'checkstyle'
+    id 'checkstyle'
     id 'findbugs'
     id 'pmd'
     id "org.sonarqube" version "2.6.2"
     id 'jacoco'
 }
 
+sourceCompatibility = '1.8'
+targetCompatibility = '1.8'
+
 task wrapper(type: Wrapper){
          gradleVersion = '4.8'
      }
+
+/**
+* CHECKSTYLE
+*/
+checkstyle {
+    ignoreFailures = true
+    sourceSets = [ sourceSets.main ]
+    showViolations = false
+    toolVersion = '8.8'
+    checkstyleTest.enabled = false
+}
+
+tasks.withType(Checkstyle) {
+    reports {
+        html.enabled = true
+        xml.enabled = false
+    }
+}
+
+
 /**
 * FINDBUGS
 */
@@ -97,8 +121,6 @@ repositories {
     mavenCentral()
 }
 
-sourceCompatibility = '1.8'
-targetCompatibility = '1.8'
 
 dependencies {
     testImplementation 'junit:junit:4.12'

@@ -2,34 +2,42 @@
 
 import java.util.ArrayList;
 
-<span class="fc" id="L5">public class Calc {</span>
+/**
+ *
+ * Static code analysis example with Checkstyle, Findbugs, PMD and SonarQube
+ * 
+ * @author Ranjith Sekar
+ * @since 2018, 19 June
+ *
+ */
+<span class="fc" id="L13">public class Calc {</span>
 
-<span class="fc" id="L7">  String name = null;</span>
+<span class="fc" id="L15">  String name = null;</span>
 
   public int add(int a, int b) {
-<span class="fc" id="L10">    return a + b;</span>
+<span class="fc" id="L18">    return a + b;</span>
   }
 
   public int sub(int a, int b) {
-<span class="fc" id="L14">    return a - b;</span>
+<span class="fc" id="L22">    return a - b;</span>
   }
 
   public int mul(int a, int b) {
-<span class="fc" id="L18">    String s = null;</span>
-<span class="pc bpc" id="L19" title="1 of 2 branches missed.">    if (s != null) {</span>
-<span class="nc" id="L20">      System.out.println(&quot;Non Null&quot;);</span>
+<span class="fc" id="L26">    String s = null;</span>
+<span class="pc bpc" id="L27" title="1 of 2 branches missed.">    if (s != null) {</span>
+<span class="nc" id="L28">      System.out.println(&quot;Non Null&quot;);</span>
     }
-<span class="fc" id="L22">    return a * b;</span>
+<span class="fc" id="L30">    return a * b;</span>
   }
 
   public int div(int a, int b) {
 
-<span class="fc" id="L27">    int c = 0;</span>
-<span class="pc bpc" id="L28" title="1 of 2 branches missed.">    if (c == 2) {</span>
-<span class="nc" id="L29">      System.out.println(&quot;c is 2&quot;);</span>
+<span class="fc" id="L35">    int c = 0;</span>
+<span class="pc bpc" id="L36" title="1 of 2 branches missed.">    if (c == 2) {</span>
+<span class="nc" id="L37">      System.out.println(&quot;c is 2&quot;);</span>
     }
 
-<span class="fc" id="L32">    return a / b;</span>
+<span class="fc" id="L40">    return a / b;</span>
   }
 
 }

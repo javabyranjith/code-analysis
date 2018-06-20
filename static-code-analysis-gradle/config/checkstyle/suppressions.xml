@@ -1,0 +1,22 @@
+<?xml version="1.0"?>
+ 
+<!DOCTYPE suppressions PUBLIC
+     "-//Puppy Crawl//DTD Suppressions 1.0//EN"
+     "http://www.puppycrawl.com/dtds/suppressions_1_0.dtd">
+
+<!-- See http://checkstyle.sourceforge.net/config_filters.html -->
+
+<suppressions>
+    <suppress files="[/\\]exclude[/\\]" checks=".*" />
+
+    <!-- Generated code packages. -->
+    <suppress files="[/\\]generated[/\\]" checks=".*" />
+    <suppress files="[/\\]snowball[/\\]ext[/\\]" checks=".*" />
+
+    <!-- JavaCC generated code. -->
+    <suppress checks=".*" files="JavaCharStream.java" />
+
+    <!-- Disable Unicode string warnings.  -->
+    <suppress checks="AvoidEscapedUnicodeCharacters" files="CommonConstants.java" />
+
+</suppressions>
