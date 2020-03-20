@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+
+<project basedir="." default="job" name="static-code-analysis-ant">
+	<property environment="env" />
+	<property file="${basedir}/build.properties" />
+
+	<target name="findbugs">
+		<taskdef name="findbugs" classname="edu.umd.cs.findbugs.anttask.FindBugsTask" classpath="${ant-findbugs.classpath}" />
+		<tstamp>
+			<format property="touch.date" pattern="MM-dd-yyyy" unit="hour" />
+			<format property="touch.time" pattern="hh-mm" unit="hour" />
+		</tstamp>
+		<findbugs home="${findbugs.dir}" output="html" timeout="3600000" reportLevel="${findbugs.reportLevel}" effort="${findbugs.effort}" failOnError="true" jvmargs="${findbugs.jvmargs}" outputFile="${findbugs.reports.dir}/${findbugs.html}_${touch.date}_${touch.time}.html" stylesheet="${findbugs.stylesheet}" debug="false" projectName="Tipinterface" excludeFilter="${findbugs.filter}">
+			<sourcePath path="${basedir}/src" />
+			<class location="${basedir}/bin" />
+		</findbugs>
+	</target>
+
+	<taskdef resource="checkstyletask.properties" classpath="${basedir}/files/checkstyle-5.6-all.jar" />
+
+	<target name="job">
+		<checkstyle config="${basedir}/files/sun_checks.xml" failureProperty="checkstyle.failure" failOnViolation="false">
+			<fileset dir="src" includes="**/*.java" />
+			<formatter type="xml" usefile="yes" tofile="${basedir}/files/output.xml"/>
+		</checkstyle>
+
+		<echo>Job is Done</echo>
+	</target>
+
+	<target name="checkstyle1">
+		<checkstyle config="docs/sun_checks.xml">
+			<fileset dir="src/checkstyle" includes="**/*.java" />
+			<formatter type="plain" />
+			<formatter type="xml" toFile="build/checkstyle_errors.xml" />
+		</checkstyle>
+	</target>
+</project>
