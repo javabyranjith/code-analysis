@@ -1,0 +1,2460 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+<FindBugsFilter>
+  <Match>
+    <Class name="com.thomson.tsipinterface.application.WebApplication" />
+    <Bug pattern="ST_WRITE_TO_STATIC_FROM_INSTANCE_METHOD" />
+  </Match>
+  <Match>
+    <Class name="com.thomson.tsipinterface.document.xslt.FieldMetaExtensionDispatcher" />
+    <Bug pattern="ST_WRITE_TO_STATIC_FROM_INSTANCE_METHOD" />
+  </Match>
+  <Match>
+    <Class name="com.thomson.tsipinterface.search.ResultsRefresherFactory" />
+    <Bug pattern="ST_WRITE_TO_STATIC_FROM_INSTANCE_METHOD" />
+  </Match>
+  <Match>
+    <Class name="com.thomson.tsipinterface.search.brs.broker.HotXml2HitIteratorsExecutor" />
+    <Bug pattern="ST_WRITE_TO_STATIC_FROM_INSTANCE_METHOD" />
+  </Match>
+  <Match>
+    <Class name="com.thomson.tsipinterface.search.brs.chachedresults.CachedResultsSearcherFactory" />
+    <Bug pattern="ST_WRITE_TO_STATIC_FROM_INSTANCE_METHOD" />
+  </Match>
+  <Match>
+    <Class name="com.thomson.tsipinterface.search.brs.directstateless.DirectStatelessSearcherFactory" />
+    <Bug pattern="ST_WRITE_TO_STATIC_FROM_INSTANCE_METHOD" />
+  </Match>
+  <Match>
+    <Class name="com.thomson.tsipinterface.search.brs.searchfilter.SfSearchFactory" />
+    <Bug pattern="ST_WRITE_TO_STATIC_FROM_INSTANCE_METHOD" />
+  </Match>
+  <Match>
+    <Class name="com.thomson.tsipinterface.web.servlets.RenderUtils" />
+    <Bug pattern="ST_WRITE_TO_STATIC_FROM_INSTANCE_METHOD" />
+  </Match>
+  <Match>
+    <Class name="com.thomson.tsipinterface.family.FamilyUtils" />
+    <Method name="propertiesToMap" />
+    <Bug pattern="OS_OPEN_STREAM" />
+  </Match>
+  <Match>
+    <Class name="com.thomson.tsipinterface.family.FamilyUtils" />
+    <Method name="mapToProperties" />
+    <Bug pattern="OS_OPEN_STREAM" />
+  </Match>
+  <Match>
+    <Class name="com.thomson.tsipinterface.document.dataservice.CacheRecordIterator" />
+    <Method name="hasNext" />
+    <Bug pattern="OS_OPEN_STREAM" />
+  </Match>
+  <Match>
+    <Class name="com.thomson.tsipinterface.application.async.fsjobsystem.FsSet" />
+    <Bug pattern="BC_IMPOSSIBLE_CAST" />
+  </Match>
+  <Match>
+    <Class name="com.thomson.tsipinterface.application.ApplicationThreadGroup" />
+    <Bug pattern="ST_WRITE_TO_STATIC_FROM_INSTANCE_METHOD" />
+  </Match>
+  <Match>
+    <Class name="com.thomson.tsipinterface.document.FtLookupNormalizerIteratorDecorator" />
+    <Method name="createCacheResponse" />
+    <Bug pattern="REC_CATCH_EXCEPTION" />
+  </Match>
+  <Match>
+    <Class name="com.thomson.tsipinterface.customfields.dao.impl.CustomFieldsDaoImpl$20" />
+    <Bug pattern="REC_CATCH_EXCEPTION" />
+  </Match>
+  <Match>
+    <Class name="com.thomson.tsipinterface.customfields.dao.impl.CustomFieldsDaoImpl" />
+    <Bug pattern="ODR_OPEN_DATABASE_RESOURCE" />
+  </Match>
+  <Match>
+    <Class name="com.thomson.tsipinterface.document.dataservice.JlsXMLParser" />
+    <Method name="parse" />
+    <Bug pattern="REC_CATCH_EXCEPTION" />
+  </Match>
+  <Match>
+    <Class name="com.thomson.tsipinterface.document.dataservice.CacheRecordIterator" />
+    <Bug pattern="REC_CATCH_EXCEPTION" />
+  </Match>
+  <Match>
+    <Class name="com.thomson.tsipinterface.impl.ctrl.FilterAwareServiceControllerDecorator" />
+    <Method name="process" />
+    <Bug pattern="NP_NULL_ON_SOME_PATH_EXCEPTION" />
+  </Match>
+  <Match>
+    <Class name="com.thomson.tsipinterface.document.dataservice.ImageUrlProvider" />
+    <Method name="getDocdelDigest" />
+    <Bug pattern="NP_NULL_ON_SOME_PATH_EXCEPTION" />
+  </Match>
+  <Match>
+    <Class name="com.thomson.tsipinterface.web.servlets.BaseRetrievalResponseRenderer" />
+    <Method name="renderSnapshot" />
+    <Bug pattern="NP_ALWAYS_NULL_EXCEPTION" />
+  </Match>
+  <Match>
+    <Class name="com.thomson.tsipinterface.web.servlets.BaseRetrievalProtoResponseRenderer" />
+    <Method name="renderSnapshot" />
+    <Bug pattern="NP_ALWAYS_NULL_EXCEPTION" />
+  </Match>  
+  <Match>
+    <Class name="com.thomson.tsipinterface.web.servlets.BaseRetrievalResponseRenderer" />
+    <Method name="renderRecord" />
+    <Bug pattern="DM_CONVERT_CASE" />
+  </Match>
+  <Match>
+    <Class name="com.thomson.tsipinterface.api.FilterDescriptor" />
+    <Method name="getArgs" />
+    <Bug pattern="EI_EXPOSE_REP" />
+  </Match>
+  <Match>
+    <Class name="com.thomson.tsipinterface.application.WebApplication" />
+    <Method name="getStartupDate" />
+    <Bug pattern="EI_EXPOSE_REP" />
+  </Match>
+  <Match>
+    <Class name="com.thomson.tsipinterface.citation.CitationImpl" />
+    <Method name="getDate" />
+    <Bug pattern="EI_EXPOSE_REP" />
+  </Match>
+  <Match>
+    <Class name="com.thomson.tsipinterface.corpTree.ctrl.CorpTreeRequest" />
+    <Method name="getTerms" />
+    <Bug pattern="EI_EXPOSE_REP" />
+  </Match>
+  <Match>
+    <Class name="com.thomson.tsipinterface.coverage.CoverageInfo" />
+    <Bug pattern="EI_EXPOSE_REP" />
+  </Match>
+  <Match>
+    <Class name="com.thomson.tsipinterface.document.dataservice.FTLookupDataRequest" />
+    <Bug pattern="EI_EXPOSE_REP" />
+  </Match>
+  <Match>
+    <Class name="com.thomson.tsipinterface.index.statelessbroker.BrokerTermExpander$ExpandRequest" />
+    <Method name="getDataSources" />
+    <Bug pattern="EI_EXPOSE_REP" />
+  </Match>
+  <Match>
+    <Class name="com.thomson.tsipinterface.recordcache.PBWriter" />
+    <Method name="getFields" />
+    <Bug pattern="EI_EXPOSE_REP" />
+  </Match>
+  <Match>
+    <Class name="com.thomson.tsipinterface.search.ResultDescription" />
+    <Method name="getSortBy" />
+    <Bug pattern="EI_EXPOSE_REP" />
+  </Match>
+  <Match>
+    <Class name="com.thomson.tsipinterface.search.ResultDescription" />
+    <Method name="getFields" />
+    <Bug pattern="EI_EXPOSE_REP" />
+  </Match>
+  <Match>
+    <Class name="com.thomson.tsipinterface.search.brs.QueryDateRangeAnalyzer$DateRange" />
+    <Bug pattern="EI_EXPOSE_REP" />
+  </Match>
+  <Match>
+    <Class name="com.thomson.tsipinterface.search.brs.chachedresults.CachedResultsParsedResult" />
+    <Method name="getExpires" />
+    <Bug pattern="EI_EXPOSE_REP" />
+  </Match>
+  <Match>
+    <Class name="com.thomson.tsipinterface.web.servlets.admin.ThreadInfo" />
+    <Method name="getStackTrace" />
+    <Bug pattern="EI_EXPOSE_REP" />
+  </Match>
+  <Match>
+    <Class name="com.thomson.tsipinterface.web.servlets.BaseRetrievalResponseRenderer" />
+    <Method name="renderSnapshot" />
+    <Bug pattern="RCN_REDUNDANT_NULLCHECK_OF_NULL_VALUE" />
+  </Match>
+  <Match>
+    <Class name="com.thomson.tsipinterface.web.servlets.BaseRetrievalProtoResponseRenderer" />
+    <Method name="renderSnapshot" />
+    <Bug pattern="RCN_REDUNDANT_NULLCHECK_OF_NULL_VALUE" />
+  </Match>  
+  <Match>
+    <Class name="com.thomson.tsipinterface.api.BaseResultSetHoldingResponse" />
+    <Method name="setListRef" />
+    <Bug pattern="NM_CONFUSING" />
+  </Match>
+  <Match>
+    <Class name="com.thomson.tsipinterface.customfields.ctrl.CustomEnumUpdateResponse" />
+    <Method name="getTimeStamp" />
+    <Bug pattern="NM_CONFUSING" />
+  </Match>
+  <Match>
+    <Class name="com.thomson.tsipinterface.customfields.ctrl.CustomEnumUpdateResponse" />
+    <Method name="getTimeStamp()" />
+    <Bug pattern="NM_CONFUSING" />
+  </Match>
+  <Match>
+    <Class name="com.thomson.tst3.dataservice.ResultDataImpl" />
+    <Method name="getTimestamp()" />
+    <Bug pattern="NM_CONFUSING" />
+  </Match>
+  <Match>
+    <Class name="com.thomson.tsipinterface.search.brs.searchfilter.SfParsedResults" />
+    <Method name="setListref" />
+    <Bug pattern="NM_CONFUSING" />
+  </Match>
+  <Match>
+    <Class name="com.thomson.tsipinterface.search.brs.searchfilter.SfResultSet" />
+    <Method name="getListref" />
+    <Bug pattern="NM_CONFUSING" />
+  </Match>
+  <Match>
+    <Class name="com.thomson.tsipinterface.api.BaseResultSetHoldingResponse" />
+    <Method name="getListRef" />
+    <Bug pattern="NM_CONFUSING" />
+  </Match>
+  <Match>
+    <Class name="com.thomson.tsipinterface.api.BaseRetrievalRequest" />
+    <Method name="setOrListRef" />
+    <Bug pattern="NM_CONFUSING" />
+  </Match>
+  <Match>
+    <Class name="com.thomson.tsipinterface.search.brs.searchfilter.SfParsedResults" />
+    <Method name="setOrListref" />
+    <Bug pattern="NM_CONFUSING" />
+  </Match>
+  <Match>
+    <Class name="com.thomson.tsipinterface.classification.ctrl.UnknownClassNode" />
+    <Method name="getChildCount" />
+    <Bug pattern="NM_CONFUSING" />
+  </Match>
+  <Match>
+    <Class name="com.thomson.tsipinterface.classification.ctrl.ClassDescription" />
+    <Method name="getChildcount" />
+    <Bug pattern="NM_CONFUSING" />
+  </Match>
+  <Match>
+    <Class name="com.thomson.tsipinterface.api.BaseRetrievalRequest" />
+    <Method name="setAndListref" />
+    <Bug pattern="NM_CONFUSING" />
+  </Match>
+  <Match>
+    <Class name="com.thomson.tsipinterface.filter.collapsetohierarchy.BaseHierarchicalResultSet" />
+    <Method name="setAndListref" />
+    <Bug pattern="NM_CONFUSING" />
+  </Match>
+  <Match>
+    <Class name="com.thomson.tsipinterface.api.BaseRetrievalRequest" />
+    <Method name="setNotListref" />
+    <Bug pattern="NM_CONFUSING" />
+  </Match>
+  <Match>
+    <Class name="com.thomson.tsipinterface.filter.collapsetohierarchy.BaseHierarchicalResultSet" />
+    <Method name="setNotListref" />
+    <Bug pattern="NM_CONFUSING" />
+  </Match>
+  <Match>
+    <Class name="com.thomson.tsipinterface.citation.filter.hierarchy.expand.ExpandDpciCitationsBroker" />
+    <Method name="setYearFields" />
+    <Bug pattern="NM_CONFUSING" />
+  </Match>
+  <Match>
+    <Class name="com.thomson.tsipinterface.document.dataservice.ImageUrlProvider" />
+    <Bug pattern="URF_UNREAD_FIELD" />
+  </Match>
+  <Match>
+    <Class name="com.thomson.tsipinterface.filter.HierarchicalExpandFiler" />
+    <Bug pattern="UUF_UNUSED_FIELD" />
+  </Match>
+  <Match>
+    <Class name="com.thomson.tsipinterface.idmapping.OutOfRangeDetector" />
+    <Bug pattern="UWF_FIELD_NOT_INITIALIZED_IN_CONSTRUCTOR" />
+  </Match>
+  <Match>
+    <Class name="com.thomson.tsipinterface.search.queryconverter.ESConverter" />
+    <Bug pattern="UWF_FIELD_NOT_INITIALIZED_IN_CONSTRUCTOR" />
+  </Match>
+  <Match>
+    <Class name="com.thomson.tsipinterface.snapshot.ctrl.SnapshotRequestChecker" />
+    <Bug pattern="UWF_FIELD_NOT_INITIALIZED_IN_CONSTRUCTOR" />
+  </Match>
+  <Match>
+    <Class name="com.thomson.tsipinterface.idmapping.PublicationNumberMapper" />
+    <Bug pattern="UWF_FIELD_NOT_INITIALIZED_IN_CONSTRUCTOR" />
+  </Match>
+  <Match>
+    <Class name="com.thomson.tsipinterface.idmapping.JpValidator" />
+    <Bug pattern="UWF_FIELD_NOT_INITIALIZED_IN_CONSTRUCTOR" />
+  </Match>
+  <Match>
+    <Class name="com.thomson.tsipinterface.idmapping.ctrl.IdMappingAwareServiceControllerDecorator" />
+    <Bug pattern="UWF_FIELD_NOT_INITIALIZED_IN_CONSTRUCTOR" />
+  </Match>
+  <Match>
+    <Class name="com.thomson.tsipinterface.idmapping.ctrl.IdMappingController" />
+    <Bug pattern="UWF_FIELD_NOT_INITIALIZED_IN_CONSTRUCTOR" />
+  </Match>
+  <Match>
+    <Class name="com.thomson.tsipinterface.idmapping.OracleMiscellaneousDaoImpl" />
+    <Bug pattern="UWF_FIELD_NOT_INITIALIZED_IN_CONSTRUCTOR" />
+  </Match>  
+  <Match>
+    <Class name="com.thomson.tsipinterface.impl.ctrl.FilterAwareServiceControllerDecorator" />
+    <Bug pattern="UWF_FIELD_NOT_INITIALIZED_IN_CONSTRUCTOR" />
+  </Match>
+  <Match>
+    <Class name="com.thomson.tsipinterface.impl.ctrl.SearchResultCachingControllerDecorator" />
+    <Bug pattern="UWF_FIELD_NOT_INITIALIZED_IN_CONSTRUCTOR" />
+  </Match>
+  <Match>
+    <Class name="com.thomson.tsipinterface.impl.ctrl.WokCitationAwareServiceControllerDecorator" />
+    <Bug pattern="UWF_FIELD_NOT_INITIALIZED_IN_CONSTRUCTOR" />
+  </Match>
+  <Match>
+    <Class name="com.thomson.tsipinterface.index.ctrl.IndexController" />
+    <Bug pattern="UWF_FIELD_NOT_INITIALIZED_IN_CONSTRUCTOR" />
+  </Match>
+  <Match>
+    <Class name="com.thomson.tsipinterface.index.statelessbroker.BrokerTermExpander" />
+    <Bug pattern="UWF_FIELD_NOT_INITIALIZED_IN_CONSTRUCTOR" />
+  </Match>
+  <Match>
+    <Class name="com.thomson.tsipinterface.index.statelessbroker.ExpandTermResponseFormat" />
+    <Bug pattern="UWF_FIELD_NOT_INITIALIZED_IN_CONSTRUCTOR" />
+  </Match>
+  <Match>
+    <Class name="com.thomson.tsipinterface.normalizer.CliToBrsNormalizer" />
+    <Bug pattern="UWF_FIELD_NOT_INITIALIZED_IN_CONSTRUCTOR" />
+  </Match>
+  <Match>
+    <Class name="com.thomson.tsipinterface.normalizer.XSLTNormalizer" />
+    <Bug pattern="UWF_FIELD_NOT_INITIALIZED_IN_CONSTRUCTOR" />
+  </Match>
+  <Match>
+    <Class name="com.thomson.tsipinterface.search.brs.MaxBackrefAnalyzer" />
+    <Bug pattern="UWF_FIELD_NOT_INITIALIZED_IN_CONSTRUCTOR" />
+  </Match>
+  <Match>
+    <Class name="com.thomson.tsipinterface.search.brs.StatelessBrokerSearchFactory" />
+    <Bug pattern="UWF_FIELD_NOT_INITIALIZED_IN_CONSTRUCTOR" />
+  </Match>
+  <Match>
+    <Class name="com.thomson.tsipinterface.search.brs.Tst3DateRangeAnalyzer" />
+    <Bug pattern="UWF_FIELD_NOT_INITIALIZED_IN_CONSTRUCTOR" />
+  </Match>
+  <Match>
+    <Class name="com.thomson.tsipinterface.search.brs.directstateless.DirectStatelessSearcher" />
+    <Bug pattern="UWF_FIELD_NOT_INITIALIZED_IN_CONSTRUCTOR" />
+  </Match>
+  <Match>
+    <Class name="com.thomson.tsipinterface.search.brs.searchfilter.SfGrouper" />
+    <Bug pattern="UWF_FIELD_NOT_INITIALIZED_IN_CONSTRUCTOR" />
+  </Match>
+  <Match>
+    <Class name="com.thomson.tsipinterface.search.ctrl.AbstractSearchController" />
+    <Bug pattern="UWF_FIELD_NOT_INITIALIZED_IN_CONSTRUCTOR" />
+  </Match>
+  <Match>
+    <Class name="com.thomson.tsipinterface.search.ctrl.CombinedSearchRequestChecker" />
+    <Bug pattern="UWF_FIELD_NOT_INITIALIZED_IN_CONSTRUCTOR" />
+  </Match>
+  <Match>
+    <Class name="com.thomson.tsipinterface.search.ctrl.SearchRequest" />
+    <Bug pattern="UWF_FIELD_NOT_INITIALIZED_IN_CONSTRUCTOR" />
+  </Match>
+  <Match>
+    <Class name="com.thomson.tsipinterface.search.queryconverter.CliConverter" />
+    <Bug pattern="UWF_FIELD_NOT_INITIALIZED_IN_CONSTRUCTOR" />
+  </Match>
+  <Match>
+    <Class name="com.thomson.tsipinterface.search.queryconverter.NormalizingFieldWeightQueryProcessor" />
+    <Bug pattern="UWF_FIELD_NOT_INITIALIZED_IN_CONSTRUCTOR" />
+  </Match>
+  <Match>
+    <Class name="com.thomson.tsipinterface.search.queryconverter.NumericFieldNameNormalizer" />
+    <Bug pattern="UWF_FIELD_NOT_INITIALIZED_IN_CONSTRUCTOR" />
+  </Match>
+  <Match>
+    <Class name="com.thomson.tsipinterface.snapshot.SnapshotStrategyImpl1" />
+    <Bug pattern="UWF_FIELD_NOT_INITIALIZED_IN_CONSTRUCTOR" />
+  </Match>
+  <Match>
+    <Class name="com.thomson.tsipinterface.sort.ctrl.SfOrderGenerator" />
+    <Bug pattern="UWF_FIELD_NOT_INITIALIZED_IN_CONSTRUCTOR" />
+  </Match>
+  <Match>
+    <Class name="com.thomson.tsipinterface.summary.DaoSummaryStrategy" />
+    <Bug pattern="UWF_FIELD_NOT_INITIALIZED_IN_CONSTRUCTOR" />
+  </Match>
+  <Match>
+    <Class name="com.thomson.tsipinterface.summary.SfSummaryStrategy" />
+    <Bug pattern="UWF_FIELD_NOT_INITIALIZED_IN_CONSTRUCTOR" />
+  </Match>
+  <Match>
+    <Class name="com.thomson.tsipinterface.summary.SummarizingControllerDecorator" />
+    <Bug pattern="UWF_FIELD_NOT_INITIALIZED_IN_CONSTRUCTOR" />
+  </Match>
+  <Match>
+    <Class name="com.thomson.tsipinterface.utils.collections.FileBackedListFactory" />
+    <Bug pattern="UWF_FIELD_NOT_INITIALIZED_IN_CONSTRUCTOR" />
+  </Match>
+  <Match>
+    <Class name="com.thomson.tsipinterface.impl.ctrl.DpciCountExpandControllerDecorator" />
+    <Bug pattern="UWF_FIELD_NOT_INITIALIZED_IN_CONSTRUCTOR" />
+  </Match>
+  <Match>
+    <Class name="com.thomson.tsipinterface.utils.spring.PrioritizedObjectListFactoryBean" />
+    <Bug pattern="UWF_FIELD_NOT_INITIALIZED_IN_CONSTRUCTOR" />
+  </Match>
+  <Match>
+    <Class name="com.thomson.tsipinterface.utils.spring.UrlFactoryBean" />
+    <Bug pattern="UWF_FIELD_NOT_INITIALIZED_IN_CONSTRUCTOR" />
+  </Match>
+  <Match>
+    <Class name="com.thomson.tsipinterface.utils.streamedstring.file.FileStreamedStringFactory" />
+    <Bug pattern="UWF_FIELD_NOT_INITIALIZED_IN_CONSTRUCTOR" />
+  </Match>
+  <Match>
+    <Class name="com.thomson.tsipinterface.web.servlets.BaseRetrievalResponseRenderer" />
+    <Bug pattern="UWF_FIELD_NOT_INITIALIZED_IN_CONSTRUCTOR" />
+  </Match>
+  <Match>
+    <Class name="com.thomson.tsipinterface.web.servlets.BaseRetrievalProtoResponseRenderer" />
+    <Bug pattern="UWF_FIELD_NOT_INITIALIZED_IN_CONSTRUCTOR" />
+  </Match>  
+  <Match>
+    <Class name="com.thomson.tsipinterface.web.servlets.TipFieldRendererImpl" />
+    <Bug pattern="UWF_FIELD_NOT_INITIALIZED_IN_CONSTRUCTOR" />
+  </Match>
+  <Match>
+    <Class name="com.thomson.tsipinterface.web.servlets.admin.AdminHelper" />
+    <Bug pattern="UWF_FIELD_NOT_INITIALIZED_IN_CONSTRUCTOR" />
+  </Match>
+  <Match>
+    <Class name="com.thomson.tsipinterface.web.servlets.admin.ConfigController" />
+    <Bug pattern="UWF_FIELD_NOT_INITIALIZED_IN_CONSTRUCTOR" />
+  </Match>
+  <Match>
+    <Class name="com.thomson.tsipinterface.web.servlets.admin.LogController" />
+    <Bug pattern="UWF_FIELD_NOT_INITIALIZED_IN_CONSTRUCTOR" />
+  </Match>
+  <Match>
+    <Class name="com.thomson.tsipinterface.web.servlets.admin.ThreadController" />
+    <Bug pattern="UWF_FIELD_NOT_INITIALIZED_IN_CONSTRUCTOR" />
+  </Match>
+  <Match>
+    <Class name="com.thomson.tsipinterface.web.servlets.coverage.CoverageResponseRenderer" />
+    <Bug pattern="UWF_FIELD_NOT_INITIALIZED_IN_CONSTRUCTOR" />
+  </Match>
+  <Match>
+    <Class name="com.thomson.tsipinterface.web.servlets.document.DocumentRequestParser" />
+    <Bug pattern="UWF_FIELD_NOT_INITIALIZED_IN_CONSTRUCTOR" />
+  </Match>
+  <Match>
+    <Class name="com.thomson.tsipinterface.web.servlets.profiling.FieldRetrievingProfiler" />
+    <Bug pattern="UWF_FIELD_NOT_INITIALIZED_IN_CONSTRUCTOR" />
+  </Match>
+  =======
+  <Match>
+    <Class name="com.thomson.tsipinterface.alert.DwpiAlertControllerDecorator" />
+    <Bug pattern="UWF_FIELD_NOT_INITIALIZED_IN_CONSTRUCTOR" />
+  </Match>
+  <Match>
+    <Class name="com.thomson.tsipinterface.api.ChainRequestChecker" />
+    <Bug pattern="UWF_FIELD_NOT_INITIALIZED_IN_CONSTRUCTOR" />
+  </Match>
+  <Match>
+    <Class name="com.thomson.tsipinterface.application.WebApplication" />
+    <Bug pattern="UWF_FIELD_NOT_INITIALIZED_IN_CONSTRUCTOR" />
+  </Match>
+  <Match>
+    <Class name="com.thomson.tsipinterface.application.WebApplication" />
+    <Bug pattern="UWF_FIELD_NOT_INITIALIZED_IN_CONSTRUCTOR" />
+  </Match>
+  <Match>
+    <Class name="com.thomson.tsipinterface.application.async.ServiceRequestSchedulerImpl" />
+    <Bug pattern="UWF_FIELD_NOT_INITIALIZED_IN_CONSTRUCTOR" />
+  </Match>
+  <Match>
+    <Class name="com.thomson.tsipinterface.application.lifecycle.ObjectPersister" />
+    <Bug pattern="UWF_FIELD_NOT_INITIALIZED_IN_CONSTRUCTOR" />
+  </Match>
+  <Match>
+    <Class name="com.thomson.tsipinterface.application.requestprocessor.BaseRequestProcessor" />
+    <Bug pattern="UWF_FIELD_NOT_INITIALIZED_IN_CONSTRUCTOR" />
+  </Match>
+  <Match>
+    <Class name="com.thomson.tsipinterface.application.requestprocessor.BatchingRequestProcessor" />
+    <Bug pattern="UWF_FIELD_NOT_INITIALIZED_IN_CONSTRUCTOR" />
+  </Match>
+  <Match>
+    <Class name="com.thomson.tsipinterface.application.requestprocessor.BatchingRequestProcessor" />
+    <Bug pattern="UWF_FIELD_NOT_INITIALIZED_IN_CONSTRUCTOR" />
+  </Match>
+  <Match>
+    <Class name="com.thomson.tsipinterface.application.requestprocessor.DispatchingRequestProcessor" />
+    <Bug pattern="UWF_FIELD_NOT_INITIALIZED_IN_CONSTRUCTOR" />
+  </Match>
+  <Match>
+    <Class name="com.thomson.tsipinterface.application.requestprocessor.SingleMultRequestProcessor" />
+    <Bug pattern="UWF_FIELD_NOT_INITIALIZED_IN_CONSTRUCTOR" />
+  </Match>
+  <Match>
+    <Class name="com.thomson.tsipinterface.application.requestprocessor.SingleMultRequestProcessor" />
+    <Bug pattern="UWF_FIELD_NOT_INITIALIZED_IN_CONSTRUCTOR" />
+  </Match>
+  <Match>
+    <Class name="com.thomson.tsipinterface.citation.filter.hierarchy.expand.ExpandCitationsBroker" />
+    <Bug pattern="UWF_FIELD_NOT_INITIALIZED_IN_CONSTRUCTOR" />
+  </Match>
+  <Match>
+    <Class name="com.thomson.tsipinterface.citation.filter.hierarchy.expand.ExpandCitationsBroker" />
+    <Bug pattern="UWF_FIELD_NOT_INITIALIZED_IN_CONSTRUCTOR" />
+  </Match>
+  <Match>
+    <Class name="com.thomson.tsipinterface.classification.ctrl.ClassificationController" />
+    <Bug pattern="UWF_FIELD_NOT_INITIALIZED_IN_CONSTRUCTOR" />
+  </Match>
+  <Match>
+    <Class name="com.thomson.tsipinterface.classification.ctrl.ClassificationController" />
+    <Bug pattern="UWF_FIELD_NOT_INITIALIZED_IN_CONSTRUCTOR" />
+  </Match>
+  <Match>
+    <Class name="com.thomson.tsipinterface.classification.ctrl.ClassificationController" />
+    <Bug pattern="UWF_FIELD_NOT_INITIALIZED_IN_CONSTRUCTOR" />
+  </Match>
+  <Match>
+    <Class name="com.thomson.tsipinterface.classification.ctrl.ClassificationController" />
+    <Bug pattern="UWF_FIELD_NOT_INITIALIZED_IN_CONSTRUCTOR" />
+  </Match>
+  <Match>
+    <Class name="com.thomson.tsipinterface.classification.ctrl.ClassificationController" />
+    <Bug pattern="UWF_FIELD_NOT_INITIALIZED_IN_CONSTRUCTOR" />
+  </Match>
+  <Match>
+    <Class name="com.thomson.tsipinterface.classification.ctrl.ClassificationController" />
+    <Bug pattern="UWF_FIELD_NOT_INITIALIZED_IN_CONSTRUCTOR" />
+  </Match>
+  <Match>
+    <Class name="com.thomson.tsipinterface.corpTree.ctrl.CorpTreeController" />
+    <Bug pattern="UWF_FIELD_NOT_INITIALIZED_IN_CONSTRUCTOR" />
+  </Match>
+  <Match>
+    <Class name="com.thomson.tsipinterface.corpTree.ctrl.CorpTreeController" />
+    <Bug pattern="UWF_FIELD_NOT_INITIALIZED_IN_CONSTRUCTOR" />
+  </Match>
+  <Match>
+    <Class name="com.thomson.tsipinterface.coverage.CoverageCache" />
+    <Bug pattern="UWF_FIELD_NOT_INITIALIZED_IN_CONSTRUCTOR" />
+  </Match>
+  <Match>
+    <Class name="com.thomson.tsipinterface.coverage.CoverageCache" />
+    <Bug pattern="UWF_FIELD_NOT_INITIALIZED_IN_CONSTRUCTOR" />
+  </Match>
+  <Match>
+    <Class name="com.thomson.tsipinterface.coverage.CoverageCache" />
+    <Bug pattern="UWF_FIELD_NOT_INITIALIZED_IN_CONSTRUCTOR" />
+  </Match>
+  <Match>
+    <Class name="com.thomson.tsipinterface.coverage.CoverageCache" />
+    <Bug pattern="UWF_FIELD_NOT_INITIALIZED_IN_CONSTRUCTOR" />
+  </Match>
+  <Match>
+    <Class name="com.thomson.tsipinterface.coverage.ctrl.CoverageControllerImpl" />
+    <Bug pattern="UWF_FIELD_NOT_INITIALIZED_IN_CONSTRUCTOR" />
+  </Match>
+  <Match>
+    <Class name="com.thomson.tsipinterface.coverage.ctrl.CoverageControllerImpl" />
+    <Bug pattern="UWF_FIELD_NOT_INITIALIZED_IN_CONSTRUCTOR" />
+  </Match>
+  <Match>
+    <Class name="com.thomson.tsipinterface.document.SearchValueConverter" />
+    <Bug pattern="UWF_FIELD_NOT_INITIALIZED_IN_CONSTRUCTOR" />
+  </Match>
+  <Match>
+    <Class name="com.thomson.tsipinterface.document.ctrl.DocumentToSearchRequestTransformer" />
+    <Bug pattern="UWF_FIELD_NOT_INITIALIZED_IN_CONSTRUCTOR" />
+  </Match>
+  <Match>
+    <Class name="com.thomson.tsipinterface.document.ctrl.DocumentToSearchRequestTransformer" />
+    <Bug pattern="UWF_FIELD_NOT_INITIALIZED_IN_CONSTRUCTOR" />
+  </Match>
+  <Match>
+    <Class name="com.thomson.tsipinterface.document.ctrl.FieldNameRequestChecker" />
+    <Bug pattern="UWF_FIELD_NOT_INITIALIZED_IN_CONSTRUCTOR" />
+  </Match>
+  <Match>
+    <Class name="com.thomson.tsipinterface.document.dataservice.CacheDataService" />
+    <Bug pattern="UWF_FIELD_NOT_INITIALIZED_IN_CONSTRUCTOR" />
+  </Match>
+  <Match>
+    <Class name="com.thomson.tsipinterface.document.dataservice.CacheDataService" />
+    <Bug pattern="UWF_FIELD_NOT_INITIALIZED_IN_CONSTRUCTOR" />
+  </Match>
+  <Match>
+    <Class name="com.thomson.tsipinterface.document.dataservice.CacheDataService" />
+    <Bug pattern="UWF_FIELD_NOT_INITIALIZED_IN_CONSTRUCTOR" />
+  </Match>
+  <Match>
+    <Class name="com.thomson.tsipinterface.document.dataservice.DocumentDataService" />
+    <Bug pattern="UWF_FIELD_NOT_INITIALIZED_IN_CONSTRUCTOR" />
+  </Match>
+  <Match>
+    <Class name="com.thomson.tsipinterface.document.dataservice.DocumentDataService" />
+    <Bug pattern="UWF_FIELD_NOT_INITIALIZED_IN_CONSTRUCTOR" />
+  </Match>
+  <Match>
+    <Class name="com.thomson.tsipinterface.document.dataservice.ST32DirectDataService" />
+    <Bug pattern="UWF_FIELD_NOT_INITIALIZED_IN_CONSTRUCTOR" />
+  </Match>
+  <Match>
+    <Class name="com.thomson.tsipinterface.document.dataservice.ST32DirectDataService" />
+    <Bug pattern="UWF_FIELD_NOT_INITIALIZED_IN_CONSTRUCTOR" />
+  </Match>
+  <Match>
+    <Class name="com.thomson.tsipinterface.document.dataservice.ST32DirectDataService" />
+    <Bug pattern="UWF_FIELD_NOT_INITIALIZED_IN_CONSTRUCTOR" />
+  </Match>
+  <Match>
+    <Class name="com.thomson.tsipinterface.document.dataservice.ST32DirectDataService" />
+    <Bug pattern="UWF_FIELD_NOT_INITIALIZED_IN_CONSTRUCTOR" />
+  </Match>
+  <Match>
+    <Class name="com.thomson.tsipinterface.document.xslt.SearchFieldMetaExtension" />
+    <Bug pattern="UWF_FIELD_NOT_INITIALIZED_IN_CONSTRUCTOR" />
+  </Match>
+  <Match>
+    <Class name="com.thomson.tsipinterface.document.xslt.SearchFieldMetaExtension" />
+    <Bug pattern="UWF_FIELD_NOT_INITIALIZED_IN_CONSTRUCTOR" />
+  </Match>
+  <Match>
+    <Class name="com.thomson.tsipinterface.documentupdate.ctrl.DocumentUpdateController" />
+    <Bug pattern="UWF_FIELD_NOT_INITIALIZED_IN_CONSTRUCTOR" />
+  </Match>
+  <Match>
+    <Class name="com.thomson.tsipinterface.documentupdate.ctrl.DocumentUpdateController" />
+    <Bug pattern="UWF_FIELD_NOT_INITIALIZED_IN_CONSTRUCTOR" />
+  </Match>
+  <Match>
+    <Class name="com.thomson.tsipinterface.documentupdate.ctrl.DocumentUpdateController" />
+    <Bug pattern="UWF_FIELD_NOT_INITIALIZED_IN_CONSTRUCTOR" />
+  </Match>
+  <Match>
+    <Class name="com.thomson.tsipinterface.family.filter.CollapseDerwentBasicFilter" />
+    <Bug pattern="UWF_FIELD_NOT_INITIALIZED_IN_CONSTRUCTOR" />
+  </Match>
+  <Match>
+    <Class name="com.thomson.tsipinterface.family.filter.hierarchy.collapse.CollapseHierarchicalToSelectedFilter" />
+    <Bug pattern="UWF_FIELD_NOT_INITIALIZED_IN_CONSTRUCTOR" />
+  </Match>
+  <Match>
+    <Class name="com.thomson.tsipinterface.family.filter.hierarchy.collapse.CollapseHierarchicalToSelectedFilter" />
+    <Bug pattern="UWF_FIELD_NOT_INITIALIZED_IN_CONSTRUCTOR" />
+  </Match>
+  <Match>
+    <Class name="com.thomson.tsipinterface.family.filter.hierarchy.collapse.CollapseHierarchicalToSelectedFilter" />
+    <Bug pattern="UWF_FIELD_NOT_INITIALIZED_IN_CONSTRUCTOR" />
+  </Match>
+  <Match>
+    <Class name="com.thomson.tsipinterface.family.filter.hierarchy.collapse.CollapseHierarchicalToSelectedFilter" />
+    <Bug pattern="UWF_FIELD_NOT_INITIALIZED_IN_CONSTRUCTOR" />
+  </Match>
+  <Match>
+    <Class name="com.thomson.tsipinterface.family.filter.hierarchy.collapse.CollapseHierarchicalToSelectedFilter" />
+    <Bug pattern="UWF_FIELD_NOT_INITIALIZED_IN_CONSTRUCTOR" />
+  </Match>
+  <Match>
+    <Class name="com.thomson.tsipinterface.family.filter.hierarchy.collapse.CollapseHierarchicalToSelectedFilter" />
+    <Bug pattern="UWF_FIELD_NOT_INITIALIZED_IN_CONSTRUCTOR" />
+  </Match>
+  <Match>
+    <Class name="com.thomson.tsipinterface.family.filter.hierarchy.collapse.FamilyDaoStringIteratorWrapper" />
+    <Bug pattern="UWF_FIELD_NOT_INITIALIZED_IN_CONSTRUCTOR" />
+  </Match>
+  <Match>
+    <Class name="com.thomson.tsipinterface.family.filter.hierarchy.expand.HierarchicalFamilyExpandBroker" />
+    <Bug pattern="UWF_FIELD_NOT_INITIALIZED_IN_CONSTRUCTOR" />
+  </Match>
+  <Match>
+    <Class name="com.thomson.tsipinterface.family.filter.hierarchy.expand.HierarchicalFamilyExpandBroker" />
+    <Bug pattern="UWF_FIELD_NOT_INITIALIZED_IN_CONSTRUCTOR" />
+  </Match>
+  <Match>
+    <Class name="com.thomson.tsipinterface.family.filter.hierarchy.expand.HierarchicalFamilyExpandBroker" />
+    <Bug pattern="UWF_FIELD_NOT_INITIALIZED_IN_CONSTRUCTOR" />
+  </Match>
+  <Match>
+    <Class name="com.thomson.tsipinterface.filter.BaseHierarchicalExpandFilter" />
+    <Bug pattern="UWF_FIELD_NOT_INITIALIZED_IN_CONSTRUCTOR" />
+  </Match>
+  <Match>
+    <Class name="com.thomson.tsipinterface.filter.SimpleFilterFactory" />
+    <Bug pattern="UWF_FIELD_NOT_INITIALIZED_IN_CONSTRUCTOR" />
+  </Match>
+  <Match>
+    <Class name="com.thomson.tsipinterface.filter.SimpleFilterFactory" />
+    <Bug pattern="UWF_FIELD_NOT_INITIALIZED_IN_CONSTRUCTOR" />
+  </Match>
+  <Match>
+    <Class name="com.thomson.tsipinterface.api.FilterDescriptor" />
+    <Bug pattern="UWF_FIELD_NOT_INITIALIZED_IN_CONSTRUCTOR" />
+  </Match>
+  <Match>
+    <Class name="com.thomson.tsipinterface.application.timing.ThreadTimer" />
+    <Bug pattern="UWF_FIELD_NOT_INITIALIZED_IN_CONSTRUCTOR" />
+  </Match>
+  <Match>
+    <Class name=" com.thomson.tsipinterface.application.timing.TimingEventTimeableImpl" />
+    <Bug pattern="UWF_FIELD_NOT_INITIALIZED_IN_CONSTRUCTOR" />
+  </Match>
+  <Match>
+    <Class name="com.thomson.tsipinterface.document.FtLookupNormalizerIteratorDecorator" />
+    <Bug pattern="UWF_FIELD_NOT_INITIALIZED_IN_CONSTRUCTOR" />
+  </Match>
+  <Match>
+    <Class name="com.thomson.tsipinterface.document.dataservice.ST32DirectDataService$ST32Worker" />
+    <Bug pattern="UWF_FIELD_NOT_INITIALIZED_IN_CONSTRUCTOR" />
+  </Match>
+  <Match>
+    <Class name="com.thomson.tsipinterface.family.filter.hierarchy.collapse.hierarchizers.BaseByCountryHierarchizer" />
+    <Bug pattern="UWF_FIELD_NOT_INITIALIZED_IN_CONSTRUCTOR" />
+  </Match>
+  <Match>
+    <Class name="com.thomson.tsipinterface.impl.ctrl.ListrefServiceControllerDecorator" />
+    <Bug pattern="UWF_FIELD_NOT_INITIALIZED_IN_CONSTRUCTOR" />
+  </Match>
+  <Match>
+    <Class name="com.thomson.tsipinterface.alertcomparison.AlertComparisonDaoImpl" />
+    <Bug pattern="UWF_FIELD_NOT_INITIALIZED_IN_CONSTRUCTOR" />
+  </Match>
+  <Match>
+    <Class name="com.thomson.tsipinterface.alertcomparison.ctrl.AlertComparisonController" />
+    <Bug pattern="UWF_FIELD_NOT_INITIALIZED_IN_CONSTRUCTOR" />
+  </Match>
+  <Match>
+    <Class name="com.thomson.tsipinterface.family.filter.hierarchy.collapse.FamilyDaoStringIteratorWrapper$InternalReader" />
+    <Bug pattern="PZLA_PREFER_ZERO_LENGTH_ARRAYS" />
+  </Match>
+  <Match>
+    <Class name="com.thomson.tsipinterface.document.dataservice.JlsXMLParser" />
+    <Bug pattern="PZLA_PREFER_ZERO_LENGTH_ARRAYS" />
+  </Match>
+  <Match>
+    <Class name="com.thomson.tsipinterface.family.filter.CollapseDerwentBasicFilter" />
+    <Method name="makeResultSet" />
+    <Bug pattern="RCN_REDUNDANT_NULLCHECK_OF_NULL_VALUE" />
+  </Match>
+  <Match>
+    <Class name="com.thomson.tsipinterface.application.ApplicationThreadFactory" />
+    <Method name="newThread" />
+    <Bug pattern="DLS_DEAD_LOCAL_STORE" />
+  </Match>
+  <Match>
+    <Class name="com.thomson.tsipinterface.customfields.dao.CustomFieldsDaoUtils" />
+    <Method name="getDataByteStream" />
+    <Bug pattern="DLS_DEAD_LOCAL_STORE" />
+  </Match>
+  <Match>
+    <Class name="com.thomson.tsipinterface.customfields.dao.impl.CustomFieldsDaoImpl" />
+    <Method name="checkCredentials" />
+    <Bug pattern="DLS_DEAD_LOCAL_STORE" />
+  </Match>
+  <Match>
+    <Class name="com.thomson.tsipinterface.citation.CitationImpl" />
+    <Bug pattern="EI_EXPOSE_REP2" />
+  </Match>
+  <Match>
+    <Class name="com.thomson.tsipinterface.corpTree.ctrl.CorpTreeRequest" />
+    <Method name="setTerms" />
+    <Bug pattern="EI_EXPOSE_REP2" />
+  </Match>
+  <Match>
+    <Class name="com.thomson.tsipinterface.coverage.CoverageInfo" />
+    <Bug pattern="EI_EXPOSE_REP2" />
+  </Match>
+  <Match>
+    <Class name="com.thomson.tsipinterface.document.dataservice.CacheRecordIterator" />
+    <Bug pattern="EI_EXPOSE_REP2" />
+  </Match>
+  <Match>
+    <Class name="com.thomson.tsipinterface.document.dataservice.FTLookupDataRequest" />
+    <Method name="setDocumentIds" />
+    <Bug pattern="EI_EXPOSE_REP2" />
+  </Match>
+  <Match>
+    <Class name="com.thomson.tsipinterface.document.dataservice.FTLookupDataRequest" />
+    <Method name="setFields" />
+    <Bug pattern="EI_EXPOSE_REP2" />
+  </Match>
+  <Match>
+    <Class name="com.thomson.tsipinterface.document.dataservice.FTLookupDataRequest" />
+    <Method name="setOutputFields" />
+    <Bug pattern="EI_EXPOSE_REP2" />
+  </Match>
+  <Match>
+    <Class name="com.thomson.tsipinterface.document.dataservice.FTLookupDataRequest" />
+    <Method name="setSortByFields" />
+    <Bug pattern="EI_EXPOSE_REP2" />
+  </Match>
+  <Match>
+    <Class name="com.thomson.tsipinterface.search.ResultDescription" />
+    <Bug pattern="EI_EXPOSE_REP2" />
+  </Match>
+  <Match>
+    <Class name="com.thomson.tsipinterface.search.ResultDescription" />
+    <Method name="setFields" />
+    <Bug pattern="EI_EXPOSE_REP2" />
+  </Match>
+  <Match>
+    <Class name="com.thomson.tsipinterface.search.ResultDescription" />
+    <Method name="setSortBy" />
+    <Bug pattern="EI_EXPOSE_REP2" />
+  </Match>
+  <Match>
+    <Class name="com.thomson.tsipinterface.search.brs.chachedresults.CachedResultsParsedResult" />
+    <Method name="setExpires" />
+    <Bug pattern="EI_EXPOSE_REP2" />
+  </Match>
+  <Match>
+    <Class name="com.thomson.tsipinterface.document.dataservice.JlsXMLParser" />
+    <Method name="parse" />
+    <Bug pattern="EI_EXPOSE_REP2" />
+  </Match>
+  <Match>
+    <Class name="com.thomson.tsipinterface.index.statelessbroker.BrokerTermExpander$ExpandRequest" />
+    <Method name="setDataSources" />
+    <Bug pattern="EI_EXPOSE_REP2" />
+  </Match>
+  <Match>
+    <Class name="com.thomson.tsipinterface.api.BaseRetrievalRequest" />
+    <Bug pattern="DM_CONVERT_CASE" />
+  </Match>
+  <Match>
+    <Class name="com.thomson.tsipinterface.api.FilterDescriptor" />
+    <Method name="parse" />
+    <Bug pattern="DM_CONVERT_CASE" />
+  </Match>
+  <Match>
+    <Class name="com.thomson.tsipinterface.family.filter.hierarchy.collapse.CollapseHierarchicalToSelectedFilter" />
+    <Method name="makeHierarchyHoldInRs" />
+    <Bug pattern="DM_CONVERT_CASE" />
+  </Match>
+  <Match>
+    <Class name="com.thomson.tsipinterface.web.servlets.TipFieldRendererImpl" />
+    <Method name="getTransName" />
+    <Bug pattern="DM_CONVERT_CASE" />
+  </Match>
+  <Match>
+    <Class name="com.thomson.tsipinterface.classification.ctrl.ClassificationController" />
+    <Method name="checkClassType" />
+    <Bug pattern="DM_CONVERT_CASE" />
+  </Match>
+  <Match>
+    <Class name="com.thomson.tsipinterface.classification.ctrl.ClassificationController" />
+    <Method name="createSearchStrategy" />
+    <Bug pattern="DM_CONVERT_CASE" />
+  </Match>
+  <Match>
+    <Class name="com.thomson.tsipinterface.classification.ctrl.ClassificationController" />
+    <Method name="lookupClasses" />
+    <Bug pattern="DM_CONVERT_CASE" />
+  </Match>
+  <Match>
+    <Class name="com.thomson.tsipinterface.classification.ctrl.ClassificationController" />
+    <Method name="process" />
+    <Bug pattern="DM_CONVERT_CASE" />
+  </Match>
+  <Match>
+    <Class name="com.thomson.tsipinterface.classification.search.JlsClassSearcher" />
+    <Method name="createSearchQuery" />
+    <Bug pattern="DM_CONVERT_CASE" />
+  </Match>
+  <Match>
+    <Class name="com.thomson.tsipinterface.document.PatentNumber" />
+    <Method name="hasType" />
+    <Bug pattern="DM_CONVERT_CASE" />
+  </Match>
+  <Match>
+    <Class name="com.thomson.tsipinterface.document.PatentNumber" />
+    <Method name="parse" />
+    <Bug pattern="DM_CONVERT_CASE" />
+  </Match>
+  <Match>
+    <Class name="com.thomson.tsipinterface.document.dataservice.CacheDataService" />
+    <Method name="segregateField" />
+    <Bug pattern="DM_CONVERT_CASE" />
+  </Match>
+  <Match>
+    <Class name="com.thomson.tsipinterface.document.dataservice.DocumentDataService" />
+    <Method name="retrieveDocs" />
+    <Bug pattern="DM_CONVERT_CASE" />
+  </Match>
+  <Match>
+    <Class name="com.thomson.tsipinterface.document.dataservice.ST32DirectDataService" />
+    <Method name="makeDocumentNormalizer" />
+    <Bug pattern="DM_CONVERT_CASE" />
+  </Match>
+  <Match>
+    <Class name="com.thomson.tsipinterface.documentupdate.ctrl.DocumentUpdateController" />
+    <Method name="getBitMask" />
+    <Bug pattern="DM_CONVERT_CASE" />
+  </Match>
+  <Match>
+    <Class name="com.thomson.tsipinterface.family.filter.hierarchy.collapse.CollapseHierarchicalToSelectedFilter" />
+    <Method name="makeHierarchy" />
+    <Bug pattern="DM_CONVERT_CASE" />
+  </Match>
+  <Match>
+    <Class name="com.thomson.tsipinterface.family.filter.hierarchy.collapse.hierarchizers.BaseByCountryHierarchizer" />
+    <Method name="getPrioFor" />
+    <Bug pattern="DM_CONVERT_CASE" />
+  </Match>
+  <Match>
+    <Class name="com.thomson.tsipinterface.family.filter.hierarchy.collapse.hierarchizers.BaseByCountryHierarchizer" />
+    <Method name="setArgs" />
+    <Bug pattern="DM_CONVERT_CASE" />
+  </Match>
+  <Match>
+    <Class name="com.thomson.tsipinterface.idmapping.OutOfRangeDetector" />
+    <Method name="parsePn" />
+    <Bug pattern="DM_CONVERT_CASE" />
+  </Match>
+  <Match>
+    <Class name="com.thomson.tsipinterface.search.brs.MaxBackrefAnalyzer" />
+    <Method name="getMaxBackref" />
+    <Bug pattern="DM_CONVERT_CASE" />
+  </Match>
+  <Match>
+    <Class name="com.thomson.tsipinterface.search.brs.St32Hit" />
+    <Method name="get" />
+    <Bug pattern="DM_CONVERT_CASE" />
+  </Match>
+  <Match>
+    <Class name="com.thomson.tsipinterface.search.brs.broker.BrokerQueryGeneratorImpl" />
+    <Method name="makeFieldWeightQueries" />
+    <Bug pattern="DM_CONVERT_CASE" />
+  </Match>
+  <Match>
+    <Class name="com.thomson.tsipinterface.search.brs.broker.BrokerQueryGeneratorImpl" />
+    <Method name="mapSortParagraph" />
+    <Bug pattern="DM_CONVERT_CASE" />
+  </Match>
+  <Match>
+    <Class name="com.thomson.tsipinterface.search.brs.searchfilter.SfExpander" />
+    <Method name="mapSortParagraph" />
+    <Bug pattern="DM_CONVERT_CASE" />
+  </Match>
+  <Match>
+    <Class name="com.thomson.tsipinterface.search.ctrl.SearchController" />
+    <Method name="derwentWorkaround" />
+    <Bug pattern="DM_CONVERT_CASE" />
+  </Match>
+  <Match>
+    <Class name="com.thomson.tsipinterface.search.ctrl.SearchController" />
+    <Method name="inpadocWorkaround" />
+    <Bug pattern="DM_CONVERT_CASE" />
+  </Match>
+  <Match>
+    <Class name="com.thomson.tsipinterface.search.queryconverter.NumericFieldNameNormalizer" />
+    <Method name="translate" />
+    <Bug pattern="DM_CONVERT_CASE" />
+  </Match>
+  <Match>
+    <Class name="com.thomson.tsipinterface.search.resultset.KeyHit" />
+    <Method name="get" />
+    <Bug pattern="DM_CONVERT_CASE" />
+  </Match>
+  <Match>
+    <Class name="com.thomson.tsipinterface.search.resultset.ResultSetUtils" />
+    <Method name="isMemListRequired" />
+    <Bug pattern="DM_CONVERT_CASE" />
+  </Match>
+  <Match>
+    <Class name="com.thomson.tsipinterface.search.syntaxchanger.NormalizerSyntaxChanger" />
+    <Method name="convert" />
+    <Bug pattern="DM_CONVERT_CASE" />
+  </Match>
+  <Match>
+    <Class name="com.thomson.tsipinterface.summary.SfSummaryStrategy" />
+    <Method name="invMapField" />
+    <Bug pattern="DM_CONVERT_CASE" />
+  </Match>
+  <Match>
+    <Class name="com.thomson.tsipinterface.summary.SfSummaryStrategy" />
+    <Method name="mapField" />
+    <Bug pattern="DM_CONVERT_CASE" />
+  </Match>
+  <Match>
+    <Class name="com.thomson.tsipinterface.utils.document.DocumentUtils" />
+    <Method name="parsePatentNumber" />
+    <Bug pattern="DM_CONVERT_CASE" />
+  </Match>
+  <Match>
+    <Class name="com.thomson.tsipinterface.web.servlets.BaseRetrievalRequestParser$1" />
+    <Method name="transform" />
+    <Bug pattern="DM_CONVERT_CASE" />
+  </Match>
+  <Match>
+    <Class name="com.thomson.tsipinterface.web.servlets.BaseServiceRequestParser" />
+    <Method name="fillBooleanProperty" />
+    <Bug pattern="DM_CONVERT_CASE" />
+  </Match>
+  <Match>
+    <Class name="com.thomson.tsipinterface.web.servlets.TipFieldRendererImpl" />
+    <Method name="getUnknownFields" />
+    <Bug pattern="DM_CONVERT_CASE" />
+  </Match>
+  <Match>
+    <Class name="com.thomson.tsipinterface.web.servlets.TipFieldRendererImpl" />
+    <Method name="render" />
+    <Bug pattern="DM_CONVERT_CASE" />
+  </Match>
+  <Match>
+    <Class name="com.thomson.tsipinterface.utils.collections.FileBackedList" />
+    <Method name="getOffsetForIndex" />
+    <Bug pattern="ICAST_INTEGER_MULTIPLY_CAST_TO_LONG" />
+  </Match>
+  <Match>
+    <Class name="com.thomson.tsipinterface.utils.collections.FileBackedList" />
+    <Method name="setOffsetForIndex" />
+    <Bug pattern="ICAST_INTEGER_MULTIPLY_CAST_TO_LONG" />
+  </Match>
+  <Match>
+    <Class name="com.thomson.tsipinterface.utils.collections.FileBackedList" />
+    <Bug pattern="IS2_INCONSISTENT_SYNC" />
+  </Match>
+  <Match>
+    <Class name="com.thomson.tsipinterface.alert.DwpiAlertControllerDecorator" />
+    <Bug pattern="BC_UNCONFIRMED_CAST" />
+  </Match>
+  <Match>
+    <Class name="com.thomson.tsipinterface.api.BaseFilter" />
+    <Bug pattern="BC_UNCONFIRMED_CAST" />
+  </Match>
+  <Match>
+    <Class name="com.thomson.tsipinterface.asynchandle.ctrl.AsyncHandleController" />
+    <Bug pattern="BC_UNCONFIRMED_CAST" />
+  </Match>
+  <Match>
+    <Class name="com.thomson.tsipinterface.citation.ctrl.CitationController" />
+    <Bug pattern="BC_UNCONFIRMED_CAST" />
+  </Match>
+  <Match>
+    <Class name="com.thomson.tsipinterface.citation.ctrl.CitationControllerMock" />
+    <Bug pattern="BC_UNCONFIRMED_CAST" />
+  </Match>
+  <Match>
+    <Class name="com.thomson.tsipinterface.citation.filter.hierarchy.expand.ExpandCitationsBroker" />
+    <Bug pattern="BC_UNCONFIRMED_CAST" />
+  </Match>
+  <Match>
+    <Class name="com.thomson.tsipinterface.classification.ctrl.ClassificationController" />
+    <Bug pattern="BC_UNCONFIRMED_CAST" />
+  </Match>
+  <Match>
+    <Class name="com.thomson.tsipinterface.corpTree.ctrl.CorpTreeController" />
+    <Bug pattern="BC_UNCONFIRMED_CAST" />
+  </Match>
+  <Match>
+    <Class name="com.thomson.tsipinterface.coverage.ctrl.CoverageControllerImpl" />
+    <Bug pattern="BC_UNCONFIRMED_CAST" />
+  </Match>
+  <Match>
+    <Class name="com.thomson.tsipinterface.coverage.ctrl.CoverageControllerMock" />
+    <Bug pattern="BC_UNCONFIRMED_CAST" />
+  </Match>
+  <Match>
+    <Class name="com.thomson.tsipinterface.document.ctrl.FieldNameRequestChecker" />
+    <Bug pattern="BC_UNCONFIRMED_CAST" />
+  </Match>
+  <Match>
+    <Class name="com.thomson.tsipinterface.document.dataservice.CacheRecordIterator" />
+    <Bug pattern="BC_UNCONFIRMED_CAST" />
+  </Match>
+  <Match>
+    <Class name="com.thomson.tsipinterface.documentupdate.ctrl.DocumentUpdateController" />
+    <Bug pattern="BC_UNCONFIRMED_CAST" />
+  </Match>
+  <Match>
+    <Class name="com.thomson.tsipinterface.documentupdate.ctrl.DocumentUpdateControllerMock" />
+    <Bug pattern="BC_UNCONFIRMED_CAST" />
+  </Match>
+  <Match>
+    <Class name="com.thomson.tsipinterface.dummy.ctrl.DummyController" />
+    <Bug pattern="BC_UNCONFIRMED_CAST" />
+  </Match>
+  <Match>
+    <Class name="com.thomson.tsipinterface.idmapping.ctrl.IdMappingController" />
+    <Bug pattern="BC_UNCONFIRMED_CAST" />
+  </Match>
+  <Match>
+    <Class name="com.thomson.tsipinterface.impl.ctrl.DocumentListAwareServiceControllerDecorator" />
+    <Bug pattern="BC_UNCONFIRMED_CAST" />
+  </Match>
+  <Match>
+    <Class name="com.thomson.tsipinterface.impl.ctrl.FilterAwareServiceControllerDecorator" />
+    <Bug pattern="BC_UNCONFIRMED_CAST" />
+  </Match>
+  <Match>
+    <Class name="com.thomson.tsipinterface.impl.ctrl.ListFlattenerControllerDecorator" />
+    <Bug pattern="BC_UNCONFIRMED_CAST" />
+  </Match>
+  <Match>
+    <Class name="com.thomson.tsipinterface.impl.ctrl.SearchResultCachingControllerDecorator" />
+    <Bug pattern="BC_UNCONFIRMED_CAST" />
+  </Match>
+  <Match>
+    <Class name="com.thomson.tsipinterface.index.ctrl.IndexController" />
+    <Bug pattern="BC_UNCONFIRMED_CAST" />
+  </Match>
+  <Match>
+    <Class name="com.thomson.tsipinterface.search.brs.broker.DirectResultParser" />
+    <Bug pattern="BC_UNCONFIRMED_CAST" />
+  </Match>
+  <Match>
+    <Class name="com.thomson.tsipinterface.search.brs.chachedresults.CachedResultParser" />
+    <Bug pattern="BC_UNCONFIRMED_CAST" />
+  </Match>
+  <Match>
+    <Class name="com.thomson.tsipinterface.search.brs.searchfilter.SfResorter" />
+    <Bug pattern="BC_UNCONFIRMED_CAST" />
+  </Match>
+  <Match>
+    <Class name="com.thomson.tsipinterface.search.brs.searchfilter.SfResultParser" />
+    <Bug pattern="BC_UNCONFIRMED_CAST" />
+  </Match>
+  <Match>
+    <Class name="com.thomson.tsipinterface.search.ctrl.CombinedSearchController" />
+    <Bug pattern="BC_UNCONFIRMED_CAST" />
+  </Match>
+  <Match>
+    <Class name="com.thomson.tsipinterface.search.ctrl.CombinedSearchRequestChecker" />
+    <Bug pattern="BC_UNCONFIRMED_CAST" />
+  </Match>
+  <Match>
+    <Class name="com.thomson.tsipinterface.search.ctrl.SearchController" />
+    <Bug pattern="BC_UNCONFIRMED_CAST" />
+  </Match>
+  <Match>
+    <Class name="com.thomson.tsipinterface.search.ctrl.SearchRequestChecker" />
+    <Bug pattern="BC_UNCONFIRMED_CAST" />
+  </Match>
+  <Match>
+    <Class name="com.thomson.tsipinterface.snapshot.ctrl.SnapshotControllerDecorator" />
+    <Bug pattern="BC_UNCONFIRMED_CAST" />
+  </Match>
+  <Match>
+    <Class name="com.thomson.tsipinterface.snapshot.ctrl.SnapshotRequestChecker" />
+    <Bug pattern="BC_UNCONFIRMED_CAST" />
+  </Match>
+  <Match>
+    <Class name="com.thomson.tsipinterface.sort.ctrl.SortingControllerDecorator" />
+    <Bug pattern="BC_UNCONFIRMED_CAST" />
+  </Match>
+  <Match>
+    <Class name="com.thomson.tsipinterface.summary.SummarizingControllerDecorator" />
+    <Bug pattern="BC_UNCONFIRMED_CAST" />
+  </Match>
+  <Match>
+    <Class name="com.thomson.tsipinterface.web.servlets.async.AsyncHandleResponseRenderer" />
+    <Bug pattern="BC_UNCONFIRMED_CAST" />
+  </Match>
+  <Match>
+    <Class name="com.thomson.tsipinterface.impl.ctrl.DpciCountExpandControllerDecorator" />
+    <Bug pattern="BC_UNCONFIRMED_CAST" />
+  </Match>
+  <Match>
+    <Class name="com.thomson.tsipinterface.citation.filter.hierarchy.expand.ExpandDpciCitationsBroker" />
+    <Bug pattern="BC_UNCONFIRMED_CAST" />
+  </Match>
+  <Match>
+    <Class name="com.thomson.tsipinterface.filter.collapsetohierarchy.CitationHierarchicalResultSet" />
+    <Bug pattern="BC_UNCONFIRMED_CAST" />
+  </Match>
+  <Match>
+    <Class name="com.thomson.tsipinterface.alertcomparison.ctrl.AlertComparisonChecker" />
+    <Bug pattern="BC_UNCONFIRMED_CAST" />
+  </Match>
+  <Match>
+    <Class name="com.thomson.tsipinterface.alertcomparison.ctrl.AlertComparisonController" />
+    <Bug pattern="BC_UNCONFIRMED_CAST" />
+  </Match>
+  <Match>
+    <Class name="com.thomson.tsipinterface.idmapping.ctrl.IdMappingAwareServiceControllerDecorator" />
+    <Bug pattern="BC_UNCONFIRMED_CAST" />
+  </Match>
+  <Match>
+    <Class name="com.thomson.tsipinterface.impl.ctrl.DpciFilterControllerDecorator" />
+    <Bug pattern="BC_UNCONFIRMED_CAST" />
+  </Match>
+  <Match>
+    <Class name="com.thomson.tsipinterface.impl.ctrl.JpNumberFormatterControllerDecorator" />
+    <Bug pattern="BC_UNCONFIRMED_CAST" />
+  </Match>
+  <Match>
+    <Class name="com.thomson.tsipinterface.impl.ctrl.ThrottlingControllerDecorator" />
+    <Bug pattern="BC_UNCONFIRMED_CAST" />
+  </Match>
+  <Match>
+    <Class name="com.thomson.tsipinterface.search.brs.searchfilter.SfSearcher" />
+    <Bug pattern="BC_UNCONFIRMED_CAST" />
+  </Match>
+  <Match>
+    <Class name="com.thomson.tsipinterface.web.servlets.alertcomparison.AlertComparisonResponseRenderer" />
+    <Bug pattern="BC_UNCONFIRMED_CAST" />
+  </Match>
+  <Match>
+    <Class name="com.thomson.tsipinterface.web.servlets.idmapping.IdMappingProtoResponseRenderer" />
+    <Bug pattern="BC_UNCONFIRMED_CAST" />
+  </Match>
+  <Match>
+    <Class name="com.thomson.tsipinterface.filter.collapsetohierarchy.HitlessHierarchicalResultSet" />
+    <Bug pattern="SE_TRANSIENT_FIELD_NOT_RESTORED" />
+  </Match>
+  <Match>
+    <Class name="com.thomson.tsipinterface.classification.ctrl.ClassificationController" />
+    <Bug pattern="SE_TRANSIENT_FIELD_NOT_RESTORED" />
+  </Match>
+  <Match>
+    <Class name="com.thomson.tsipinterface.documentupdate.ctrl.DocumentUpdateController" />
+    <Bug pattern="SE_TRANSIENT_FIELD_NOT_RESTORED" />
+  </Match>
+  <Match>
+    <Class name="com.thomson.tsipinterface.filter.collapsetohierarchy.CitationHierarchicalResultSet" />
+    <Bug pattern="SE_TRANSIENT_FIELD_NOT_RESTORED" />
+  </Match>
+  <Match>
+    <Class name="com.thomson.tsipinterface.search.brs.chachedresults.CachedResultSet" />
+    <Bug pattern="SE_TRANSIENT_FIELD_NOT_RESTORED" />
+  </Match>
+  <Match>
+    <Class name="com.thomson.tsipinterface.search.brs.chachedresults.CachedResultsSearcher" />
+    <Bug pattern="SE_TRANSIENT_FIELD_NOT_RESTORED" />
+  </Match>
+  <Match>
+    <Class name="com.thomson.tsipinterface.search.brs.directstateless.DirectStatelessResultSet" />
+    <Bug pattern="SE_TRANSIENT_FIELD_NOT_RESTORED" />
+  </Match>
+  <Match>
+    <Class name="com.thomson.tsipinterface.search.brs.directstateless.DirectStatelessSearcher" />
+    <Bug pattern="SE_TRANSIENT_FIELD_NOT_RESTORED" />
+  </Match>
+  <Match>
+    <Class name="com.thomson.tsipinterface.summary.SummarizingControllerDecorator" />
+    <Bug pattern="SE_TRANSIENT_FIELD_NOT_RESTORED" />
+  </Match>
+  <Match>
+    <Class name="com.thomson.tsipinterface.document.dataservice.CacheDataService" />
+    <Method name="getDocsFrmCache" />
+    <Bug pattern="DLS_DEAD_LOCAL_STORE_OF_NULL" />
+  </Match>
+  <Match>
+    <Class name="com.thomson.tsipinterface.citation.filter.hierarchy.expand.ExpandCitationsBroker" />
+    <Method name="makeExpandedResultSet" />
+    <Bug pattern="DLS_DEAD_LOCAL_STORE_OF_NULL" />
+  </Match>
+  <Match>
+    <Class name="com.thomson.tsipinterface.recordcache.RecordCacheContextFilter" />
+    <Method name="doFilter" />
+    <Bug pattern="DLS_DEAD_LOCAL_STORE_OF_NULL" />
+  </Match>
+  <Match>
+    <Class name="com.thomson.tsipinterface.customfields.dao.impl.CustomFieldsDaoImpl" />
+    <Method name="update" />
+    <Bug pattern="DLS_DEAD_LOCAL_STORE_OF_NULL" />
+  </Match>
+  <Match>
+    <Class name="com.thomson.tsipinterface.family.filter.hierarchy.expand.HierarchicalFamilyExpandBroker" />
+    <Method name="expandOnFirst60kBasicPat" />
+    <Bug pattern="DLS_DEAD_LOCAL_STORE_OF_NULL" />
+  </Match>
+  
+  <Match>
+    <Class name="com.thomson.tsipinterface.citation.filter.hierarchy.expand.ExpandCitationsBroker" />
+    <Method name="getHierarchy" />
+    <Bug pattern="OS_OPEN_STREAM_EXCEPTION_PATH" />
+  </Match>
+  <Match>
+    <Class name="com.thomson.tsipinterface.family.filter.CollapseDerwentBasicFilter" />
+    <Method name="makeResultSet" />
+    <Bug pattern="OS_OPEN_STREAM_EXCEPTION_PATH" />
+  </Match>
+  <Match>
+    <Class name="com.thomson.tsipinterface.family.filter.hierarchy.collapse.CollapseHierarchicalToSelectedFilter" />
+    <Method name="makeHierarchy" />
+    <Bug pattern="OS_OPEN_STREAM_EXCEPTION_PATH" />
+  </Match>
+  <Match>
+    <Class name="com.thomson.tsipinterface.family.filter.hierarchy.expand.HierarchicalFamilyExpandBroker" />
+    <Method name="makeHierarchy" />
+    <Bug pattern="OS_OPEN_STREAM_EXCEPTION_PATH" />
+  </Match>
+  <Match>
+    <Class name="com.thomson.tsipinterface.application.async.ServiceRequestSchedulerImpl$Worker" />
+    <Bug pattern="DM_USELESS_THREAD" />
+  </Match>
+  <Match>
+    <Class name="com.thomson.tsipinterface.classification.search.JlsClassSearcher$1" />
+    <Bug pattern="DM_USELESS_THREAD" />
+  </Match>
+  <Match>
+    <Class name="com.thomson.tsipinterface.search.brs.searchfilter.SfGrouper$1" />
+    <Bug pattern="DM_USELESS_THREAD" />
+  </Match>
+  <Match>
+    <Class name="com.thomson.tsipinterface.utils.collections.FileBackedList$FileCloserThread" />
+    <Bug pattern="DM_USELESS_THREAD" />
+  </Match>
+  <Match>
+    <Class name="com.thomson.tsipinterface.customfields.dao.impl.CustomFieldsDaoImpl$5" />
+    <Bug pattern="DM_USELESS_THREAD" />
+  </Match>
+  <Match>
+    <Class name="com.thomson.tsipinterface.customfields.dao.impl.CustomFieldsDaoImpl$8" />
+    <Bug pattern="DM_USELESS_THREAD" />
+  </Match>
+  <Match>
+    <Class name="com.thomson.tsipinterface.customfields.dao.impl.CustomFieldsDaoImpl$6" />
+    <Bug pattern="DM_USELESS_THREAD" />
+  </Match>
+  <Match>
+    <Class name="com.thomson.tsipinterface.customfields.dao.impl.CustomFieldsDaoImpl$7" />
+    <Bug pattern="DM_USELESS_THREAD" />
+  </Match>
+  <Match>
+    <Class name="com.thomson.tsipinterface.customfields.dao.impl.CustomFieldsDaoImpl$9" />
+    <Bug pattern="DM_USELESS_THREAD" />
+  </Match>
+  <Match>
+    <Class name="com.thomson.tsipinterface.application.requestprocessor.DispatchingRequestProcessor" />
+    <Method name="process" />
+    <Bug pattern="DB_DUPLICATE_SWITCH_CLAUSES" />
+  </Match>
+  <Match>
+    <Class name="com.thomson.tsipinterface.application.requestprocessor.SingleMultRequestProcessor" />
+    <Method name="process" />
+    <Bug pattern="DB_DUPLICATE_SWITCH_CLAUSES" />
+  </Match>
+  <Match>
+    <Class name="com.thomson.tsipinterface.application.async.fsjobsystem.FsQueue$1" />
+    <Bug pattern="SIC_INNER_SHOULD_BE_STATIC_ANON" />
+  </Match>
+   <Match>
+    <Class name="com.thomson.tsipinterface.document.dataservice.CacheDataService$1" />
+    <Bug pattern="SIC_INNER_SHOULD_BE_STATIC_ANON" />
+  </Match>
+  <Match>
+    <Class name="com.thomson.tsipinterface.classification.search.JlsClassSearcher$1" />
+    <Bug pattern="SIC_INNER_SHOULD_BE_STATIC_ANON" />
+  </Match>
+  <Match>
+    <Class name="com.thomson.tsipinterface.coverage.CoverageCache$1" />
+    <Bug pattern="SIC_INNER_SHOULD_BE_STATIC_ANON" />
+  </Match>
+  <Match>
+    <Class name="com.thomson.tsipinterface.coverage.CoverageCache$2" />
+    <Bug pattern="SIC_INNER_SHOULD_BE_STATIC_ANON" />
+  </Match>
+  <Match>
+    <Class name="com.thomson.tsipinterface.coverage.CoverageCache$3" />
+    <Bug pattern="SIC_INNER_SHOULD_BE_STATIC_ANON" />
+  </Match>
+  <Match>
+    <Class name="com.thomson.tsipinterface.coverage.CoverageCache$4" />
+    <Bug pattern="SIC_INNER_SHOULD_BE_STATIC_ANON" />
+  </Match>
+  <Match>
+    <Class name="com.thomson.tsipinterface.idmapping.OracleMiscellaneousDaoImpl$3" />
+    <Bug pattern="SIC_INNER_SHOULD_BE_STATIC_ANON" />
+  </Match>
+  <Match>
+    <Class name="com.thomson.tsipinterface.document.dataservice.DocumentDataService$1" />
+    <Bug pattern="SIC_INNER_SHOULD_BE_STATIC_ANON" />
+  </Match>
+  <Match>
+    <Class name="com.thomson.tsipinterface.document.dataservice.ST32DirectDataService$1" />
+    <Bug pattern="SIC_INNER_SHOULD_BE_STATIC_ANON" />
+  </Match>
+  <Match>
+    <Class name="com.thomson.tsipinterface.search.brs.broker.BasicPatentDocIdSource$1" />
+    <Bug pattern="SIC_INNER_SHOULD_BE_STATIC_ANON" />
+  </Match>
+  <Match>
+    <Class name="com.thomson.tsipinterface.search.brs.broker.HotXml2HitIterators$1" />
+    <Bug pattern="SIC_INNER_SHOULD_BE_STATIC_ANON" />
+  </Match>
+  <Match>
+    <Class name="com.thomson.tsipinterface.search.brs.broker.ResultSetDocIdSource$1" />
+    <Bug pattern="SIC_INNER_SHOULD_BE_STATIC_ANON" />
+  </Match>
+  <Match>
+    <Class name="com.thomson.tsipinterface.search.brs.searchfilter.SfCollapseApplicationFilter$1" />
+    <Bug pattern="SIC_INNER_SHOULD_BE_STATIC_ANON" />
+  </Match>
+  <Match>
+    <Class name="com.thomson.tsipinterface.search.brs.searchfilter.SfGrouper$1" />
+    <Bug pattern="SIC_INNER_SHOULD_BE_STATIC_ANON" />
+  </Match>
+  <Match>
+    <Class name="com.thomson.tsipinterface.search.resultset.KeyResultSet$1" />
+    <Bug pattern="SIC_INNER_SHOULD_BE_STATIC_ANON" />
+  </Match>
+  <Match>
+    <Class name="com.thomson.tsipinterface.web.TipInterfaceInit$2" />
+    <Bug pattern="SIC_INNER_SHOULD_BE_STATIC_ANON" />
+  </Match>
+  <Match>
+    <Class name="com.thomson.tsipinterface.web.servlets.BaseRetrievalRequestParser$1" />
+    <Bug pattern="SIC_INNER_SHOULD_BE_STATIC_ANON" />
+  </Match>
+  <Match>
+    <Class name="com.thomson.tsipinterface.web.servlets.admin.LogController$1" />
+    <Bug pattern="SIC_INNER_SHOULD_BE_STATIC_ANON" />
+  </Match>
+  <Match>
+    <Class name="com.thomson.tsipinterface.search.brs.broker.HitListDocIdSource$1" />
+    <Bug pattern="SIC_INNER_SHOULD_BE_STATIC_ANON" />
+  </Match>
+  <Match>
+    <Class name="com.thomson.tsipinterface.search.DpciCountExpander$1" />
+    <Bug pattern="SIC_INNER_SHOULD_BE_STATIC_ANON" />
+  </Match>
+   <Match>
+    <Class name="com.thomson.tsipinterface.search.DpciCountExpander$2" />
+    <Bug pattern="SIC_INNER_SHOULD_BE_STATIC_ANON" />
+  </Match>
+  <Match>
+    <Class name="com.thomson.tsipinterface.utils.iterators.SublistIterator" />
+    <Method name="next" />
+    <Bug pattern="IT_NO_SUCH_ELEMENT" />
+  </Match>
+  <Match>
+    <Class name="com.thomson.tsipinterface.document.dataservice.CustomFieldsDataIterator" />
+    <Method name="next" />
+    <Bug pattern="IT_NO_SUCH_ELEMENT" />
+  </Match>
+  <Match>
+    <Class name="com.thomson.tsipinterface.application.DirectoryCleaner$OlderThanFileFilter" />
+    <Bug code="SIC" />
+  </Match>
+  <Match>
+    <Class name="com.thomson.tsipinterface.document.dataservice.JlsXMLParser$Field" />
+    <Bug code="SIC" />
+  </Match>
+  <Match>
+    <Class name="com.thomson.tsipinterface.document.dataservice.JlsXMLParser$GrpField" />
+    <Bug code="SIC" />
+  </Match>
+  <Match>
+    <Class name="com.thomson.tsipinterface.document.dataservice.JlsXMLParser$Position" />
+    <Bug code="SIC" />
+  </Match>
+  <Match>
+    <Class name="com.thomson.tsipinterface.document.relatedapps.RelatedAppFacade$AppLink" />
+    <Bug code="SIC" />
+  </Match>
+  <Match>
+    <Class name="com.thomson.tsipinterface.document.relatedapps.RelatedAppFacade$Node" />
+    <Bug code="SIC" />
+  </Match>
+  <Match>
+    <Class name="com.thomson.tsipinterface.documentupdate.ctrl.DocumentUpdateController$DocUpdates" />
+    <Bug code="SIC" />
+  </Match>
+  <Match>
+    <Class name="com.thomson.tsipinterface.family.filter.hierarchy.collapse.FamilyDaoStringIteratorWrapper$InternalReader" />
+    <Bug code="SIC" />
+  </Match>
+  <Match>
+    <Class name="com.thomson.tsipinterface.idmapping.OutOfRangeDetector$PublicationNumber" />
+    <Bug code="SIC" />
+  </Match>
+  <Match>
+    <Class name="com.thomson.tsipinterface.sort.inmemory.TreeSortingEngine$OrderedResultIterator" />
+    <Bug code="SIC" />
+  </Match>
+  <Match>
+    <Class name="com.thomson.tsipinterface.web.servlets.admin.LogController$FileInfo" />
+    <Bug code="SIC" />
+  </Match>
+  <Match>
+    <Class name="com.thomson.tsipinterface.web.servlets.admin.RuntimeStats$NamedCounter" />
+    <Bug code="SIC" />
+  </Match>
+  <Match>
+    <Class name="com.thomson.tsipinterface.coverage.CoverageCache" />
+    <Method name="getCoverageInfoInternal" />
+    <Bug pattern="RV_CHECK_FOR_POSITIVE_INDEXOF" />
+  </Match>
+  <Match>
+    <Class name="com.thomson.tsipinterface.coverage.CoverageCache" />
+    <Method name="getCoverageInfoInternal" />
+    <Bug pattern="RV_CHECK_FOR_POSITIVE_INDEXOF" />
+  </Match>
+  <Match>
+    <Class name="com.thomson.tsipinterface.application.async.Batch" />
+    <Bug pattern="UWF_FIELD_NOT_INITIALIZED_IN_CONSTRUCTOR" />
+  </Match>
+  <Match>
+    <Class name="com.thomson.tsipinterface.search.brs.searchfilter.SfExpander" />
+    <Bug pattern="UWF_FIELD_NOT_INITIALIZED_IN_CONSTRUCTOR" />
+  </Match>
+  <Match>
+    <Class name="com.thomson.tsipinterface.search.brs.broker.ParsedHeaderResult" />
+    <Bug pattern="UWF_FIELD_NOT_INITIALIZED_IN_CONSTRUCTOR" />
+  </Match>
+  <Match>
+    <Class name="com.thomson.tsipinterface.application.timing.TimingEventTimeableImpl" />
+    <Bug pattern="UWF_FIELD_NOT_INITIALIZED_IN_CONSTRUCTOR" />
+  </Match>
+  <Match>
+    <Class name="com.thomson.tsipinterface.search.brs.searchfilter.SfSearcher" />
+    <Bug pattern="UWF_FIELD_NOT_INITIALIZED_IN_CONSTRUCTOR" />
+  </Match>
+  <Match>
+    <Class name="com.thomson.tsipinterface.application.requestprocessor.BaseRequestProcessor" />
+    <Bug pattern="NP_LOAD_OF_KNOWN_NULL_VALUE" />
+  </Match>
+  <Match>
+    <Class name="com.thomson.tsipinterface.snapshot.SnapshotStrategyImpl1" />
+    <Bug pattern="NP_LOAD_OF_KNOWN_NULL_VALUE" />
+  </Match>
+  <Match>
+    <Class name="com.thomson.tsipinterface.citation.filter.hierarchy.expand.ExpandCitationsBroker" />
+    <Bug pattern="NP_LOAD_OF_KNOWN_NULL_VALUE" />
+  </Match>
+  <Match>
+    <Class name="com.thomson.tsipinterface.web.servlets.ThomsonIPServiceServlet" />
+    <Bug pattern="NP_LOAD_OF_KNOWN_NULL_VALUE" />
+  </Match>
+  <Match>
+    <Class name="com.thomson.tsipinterface.document.dataservice.CacheRecordIterator" />
+    <Bug pattern="NP_LOAD_OF_KNOWN_NULL_VALUE" />
+  </Match>
+  <Match>
+    <Class name="com.thomson.tsipinterface.family.filter.hierarchy.expand.HierarchicalFamilyExpandBroker" />
+    <Bug pattern="DLS_DEAD_LOCAL_STORE" />
+  </Match>
+  <Match>
+    <Class name="com.thomson.tsipinterface.aop.timing.broker.TimingAfterPatdocParser" />
+    <Method name="parse" />
+    <Bug pattern="REC_CATCH_EXCEPTION" />
+  </Match>
+  <Match>
+    <Class name="com.thomson.tsipinterface.application.async.ServiceRequestSchedulerImpl$Worker" />
+    <Method name="run" />
+    <Bug pattern="REC_CATCH_EXCEPTION" />
+  </Match>
+  <Match>
+    <Class name="com.thomson.tsipinterface.citation.filter.hierarchy.expand.ExpandCitationsBroker" />
+    <Method name="expand" />
+    <Bug pattern="REC_CATCH_EXCEPTION" />
+  </Match>
+  <Match>
+    <Class name="com.thomson.tsipinterface.citation.filter.hierarchy.expand.ExpandCitationsBroker" />
+    <Method name="getHierarchy" />
+    <Bug pattern="REC_CATCH_EXCEPTION" />
+  </Match>
+  <Match>
+    <Class name="com.thomson.tsipinterface.classification.ctrl.ClassificationController" />
+    <Method name="process" />
+    <Bug pattern="REC_CATCH_EXCEPTION" />
+  </Match>
+  <Match>
+    <Class name="com.thomson.tsipinterface.corpTree.search.CorporateTreeHit" />
+    <Method name="get" />
+    <Bug pattern="REC_CATCH_EXCEPTION" />
+  </Match>
+  <Match>
+    <Class name="com.thomson.tsipinterface.document.dataservice.CacheDataService" />
+    <Method name="getDocsFrmST32" />
+    <Bug pattern="REC_CATCH_EXCEPTION" />
+  </Match>
+  <Match>
+    <Class name="com.thomson.tsipinterface.document.dataservice.CacheDataService" />
+    <Bug pattern="RCN_REDUNDANT_NULLCHECK_OF_NONNULL_VALUE" />
+  </Match>
+   <Match>
+    <Class name="com.thomson.tsipinterface.customfields.dao.CustomFieldsDaoUtils" />
+    <Bug pattern="RCN_REDUNDANT_NULLCHECK_OF_NONNULL_VALUE" />
+  </Match>
+  <Match>
+    <Class name="com.thomson.tsipinterface.web.servlets.search.SearchRequestParser" />
+    <Bug pattern="RCN_REDUNDANT_NULLCHECK_OF_NONNULL_VALUE" />
+  </Match>
+   <Match>
+    <Class name="com.thomson.tsipinterface.web.servlets.BaseRetrievalRequestParser" />
+    <Bug pattern="RCN_REDUNDANT_NULLCHECK_OF_NONNULL_VALUE" />
+  </Match>
+  <Match>
+    <Class name="com.thomson.tsipinterface.document.dataservice.ST32DirectDataService" />
+    <Bug pattern="RCN_REDUNDANT_NULLCHECK_OF_NONNULL_VALUE" />
+  </Match>
+  <Match>
+    <Class name="com.thomson.tsipinterface.web.servlets.BaseRetrievalResponseRenderer" />
+    <Bug pattern="RCN_REDUNDANT_NULLCHECK_OF_NONNULL_VALUE" />
+  </Match> 
+  <Match>
+    <Class name="com.thomson.tsipinterface.family.filter.hierarchy.expand.HierarchicalFamilyExpandBroker" />
+    <Method name="makeExpandedResultSet" />
+    <Bug pattern="REC_CATCH_EXCEPTION" />
+  </Match>
+  <Match>
+    <Class name="com.thomson.tsipinterface.family.filter.hierarchy.expand.HierarchicalFamilyExpandBroker" />
+    <Method name="makeHierarchy" />
+    <Bug pattern="REC_CATCH_EXCEPTION" />
+  </Match>
+  <Match>
+    <Class name="com.thomson.tsipinterface.recordcache.SaxBuilder" />
+    <Bug pattern="REC_CATCH_EXCEPTION" />
+  </Match>
+  <Match>
+    <Class name="com.thomson.tsipinterface.search.brs.searchfilter.SfXml2HitIterator" />
+    <Method name="parseCurrentHit" />
+    <Bug pattern="REC_CATCH_EXCEPTION" />
+  </Match>
+  <Match>
+    <Class name="com.thomson.tsipinterface.utils.collections.FileBackedList" />
+    <Method name="retrieve" />
+    <Bug pattern="REC_CATCH_EXCEPTION" />
+  </Match>
+  <Match>
+    <Class name="com.thomson.tsipinterface.web.servlets.ThomsonIPServiceServlet" />
+    <Method name="processRequest" />
+    <Bug pattern="REC_CATCH_EXCEPTION" />
+  </Match>
+  <Match>
+    <Class name="com.thomson.tsipinterface.web.servlets.document.DocumentRequestParser" />
+    <Method name="parseRequestParameters" />
+    <Bug pattern="REC_CATCH_EXCEPTION" />
+  </Match>
+  <Match>
+    <Class name="com.thomson.tsipinterface.web.servlets.search.CombinedSearchRequestParser" />
+    <Method name="parseRequestParameters" />
+    <Bug pattern="REC_CATCH_EXCEPTION" />
+  </Match>
+  <Match>
+    <Class name="com.thomson.tsipinterface.web.servlets.TipFieldRendererImpl" />
+    <Method name="renderDoc" />
+    <Bug pattern="DM_CONVERT_CASE" />
+  </Match>
+  <Match>
+    <Class name="com.thomson.tsipinterface.document.dataservice.JlsXMLProtoParser$Key" />
+    <Bug pattern="HE_HASHCODE_USE_OBJECT_EQUALS" />
+  </Match>
+  <Match>
+    <Class name="com.thomson.tsipinterface.document.dataservice.CacheDataService" />
+    <Bug pattern="DLS_DEAD_LOCAL_STORE" />
+  </Match>
+  <Match>
+    <Class name="com.thomson.tsipinterface.classification.ctrl.ClassificationController" />
+    <Bug pattern="DM_CONVERT_CASE" />
+  </Match>
+  <Match>
+    <Class name="com.thomson.tsipinterface.filter.FilterRequestChecker" />
+    <Bug pattern="ST_WRITE_TO_STATIC_FROM_INSTANCE_METHOD" />
+  </Match>
+  <Match>
+    <Class name="com.thomson.tsipinterface.customfields.ctrl.CustomFieldsRequest" />
+    <Method name="getValues" />
+    <Bug pattern="EI_EXPOSE_REP" />
+  </Match>
+  <Match>
+    <Class name="com.thomson.tsipinterface.customfields.ctrl.CustomFieldsRequest" />
+    <Bug pattern="EI_EXPOSE_REP2" />
+  </Match>
+  <Match>
+    <Class name="com.thomson.tsipinterface.summary.SummarizeRequestChecker" />
+    <Bug pattern="BC_UNCONFIRMED_CAST" />
+  </Match>
+  <Match>
+    <Class name="com.thomson.tsipinterface.classification.ctrl.ClassificationControllerMock" />
+    <Bug pattern="BC_UNCONFIRMED_CAST" />
+  </Match>
+  <Match>
+    <Class name="com.thomson.tsipinterface.filter.FilterRequestChecker" />
+    <Bug pattern="BC_UNCONFIRMED_CAST" />
+  </Match>
+  <Match>
+    <Class name="com.thomson.tsipinterface.summary.SummarizeRequestChecker" />
+    <Bug pattern="BC_UNCONFIRMED_CAST" />
+  </Match>
+  <Match>
+    <Class name="com.thomson.tsipinterface.customfields.ctrl.CustomFieldsRequestChecker" />
+    <Bug pattern="BC_UNCONFIRMED_CAST" />
+  </Match>
+  <Match>
+    <Class name="com.thomson.tsipinterface.customfields.ctrl.CustomFieldsServiceControllerDecorator" />
+    <Bug pattern="UWF_FIELD_NOT_INITIALIZED_IN_CONSTRUCTOR" />
+  </Match>
+  <Match>
+    <Class name="com.thomson.tsipinterface.customfields.ctrl.CustomCreateAccessController" />
+    <Bug pattern="UWF_FIELD_NOT_INITIALIZED_IN_CONSTRUCTOR" />
+  </Match>
+  <Match>
+    <Class name="com.thomson.tsipinterface.idmapping.IdMappingSummary" />
+    <Bug pattern="UWF_FIELD_NOT_INITIALIZED_IN_CONSTRUCTOR" />
+  </Match>
+  <Match>
+    <Class name="com.thomson.tsipinterface.impl.ctrl.DpciFilterControllerDecorator" />
+    <Bug pattern="UWF_FIELD_NOT_INITIALIZED_IN_CONSTRUCTOR" />
+  </Match>
+  <Match>
+    <Class name="com.thomson.tsipinterface.search.DpciCountExpander" />
+    <Bug pattern="UWF_FIELD_NOT_INITIALIZED_IN_CONSTRUCTOR" />
+  </Match>
+  <Match>
+    <Class name="com.thomson.tsipinterface.search.brs.searchfilter.DpciFilterExpander" />
+    <Bug pattern="UWF_FIELD_NOT_INITIALIZED_IN_CONSTRUCTOR" />
+  </Match>
+  <Match>
+    <Class name="com.thomson.tsipinterface.summary.SfSummaryFilterer" />
+    <Bug pattern="UWF_FIELD_NOT_INITIALIZED_IN_CONSTRUCTOR" />
+  </Match>
+  <Match>
+    <Class name="com.thomson.tsipinterface.customfields.ctrl.CustomUpdateRequest" />
+    <Method name="getValues" />
+    <Bug pattern="EI_EXPOSE_REP" />
+  </Match>
+  <Match>
+    <Class name="com.thomson.tsipinterface.customfields.ctrl.CustomUpdateRequest" />
+    <Bug pattern="EI_EXPOSE_REP2" />
+  </Match>
+  <Match>
+    <Class name="com.thomson.tsipinterface.customfields.dao.impl.CustomFieldsDaoImpl" />
+    <Bug pattern="UWF_FIELD_NOT_INITIALIZED_IN_CONSTRUCTOR" />
+  </Match>
+  <Match>
+    <Class name="com.thomson.tsipinterface.document.dataservice.CustomFieldsDataIterator" />
+    <Bug pattern="EI_EXPOSE_REP2" />
+  </Match>
+  <Match>
+    <Class name="com.thomson.tsipinterface.document.dataservice.CustomFieldsDataService" />
+    <Bug pattern="UWF_FIELD_NOT_INITIALIZED_IN_CONSTRUCTOR" />
+  </Match>
+  <Match>
+    <Class name="com.thomson.tsipinterface.idmapping.IdMigrationCache" />
+    <Bug pattern="UWF_FIELD_NOT_INITIALIZED_IN_CONSTRUCTOR" />
+  </Match>
+  <Match>
+    <Class name="com.thomson.tsipinterface.normalizer.CliToBrsNormalizer" />
+    <Method name="translate" />
+    <Bug pattern="DM_CONVERT_CASE" />
+  </Match>
+  <Match>
+    <Class name="com.thomson.tsipinterface.search.brs.broker.BrokerQueryGeneratorImpl" />
+    <Method name="expandByWeightAndCustomField" />
+    <Bug pattern="DM_CONVERT_CASE" />
+  </Match>
+  <Match>
+    <Class name="com.thomson.tsipinterface.search.queryconverter.QueryListProcessingManager" />
+    <Bug pattern="UWF_FIELD_NOT_INITIALIZED_IN_CONSTRUCTOR" />
+  </Match>
+  <Match>
+    <Class name="com.thomson.tsipinterface.search.ctrl.CombinedSearchController" />
+    <Bug pattern="UWF_FIELD_NOT_INITIALIZED_IN_CONSTRUCTOR" />
+  </Match>
+  <Match>
+    <Class name="com.thomson.tsipinterface.search.syntaxchanger.NormalizerSyntaxChanger" />
+    <Method name="convertStandardField" />
+    <Bug pattern="DM_CONVERT_CASE" />
+  </Match>
+  <Match>
+    <Class name="com.thomson.tsipinterface.web.servlets.customfields.CustomUpdateResponseRenderer" />
+    <Bug pattern="BC_UNCONFIRMED_CAST" />
+  </Match>
+  <Match>
+    <Class name="com.thomson.tsipinterface.customfields.dao.CustomFieldsDaoUtils" />
+    <Bug code="STCAL" />
+  </Match>
+  <Match>
+    <Class name="com.thomson.tsipinterface.customfields.ctrl.CustomEnumUpdateRequest" />
+    <Method name="getValues" />
+    <Bug pattern="EI_EXPOSE_REP" />
+  </Match>
+  <Match>
+    <Class name="com.thomson.tsipinterface.customfields.ctrl.CustomEnumUpdateRequest" />
+    <Bug pattern="EI_EXPOSE_REP2" />
+  </Match>
+  <Match>
+    <Class name="com.thomson.tsipinterface.customfields.dao.impl.CustomFieldsDaoImpl" />
+    <Method name="insertEntityAccess" />
+    <Bug pattern="DLS_DEAD_LOCAL_STORE" />
+  </Match>
+  <Match>
+    <Class name="com.thomson.tsipinterface.customfields.dao.impl.CustomFieldsDaoImpl$3" />
+    <Method name="doInTransaction" />
+    <Bug pattern="REC_CATCH_EXCEPTION" />
+  </Match>
+  <Match>
+    <Class name="com.thomson.tsipinterface.customfields.dao.impl.CustomFieldsDaoImpl$22" />
+    <Bug pattern="REC_CATCH_EXCEPTION" />
+  </Match>
+  <Match>
+    <Class name="com.thomson.tsipinterface.customfields.dao.impl.CustomFieldsDaoImpl" />
+    <Method name="clearFieldValues" />
+    <Bug pattern="REC_CATCH_EXCEPTION" />
+  </Match>
+  <Match>
+    <Class name="com.thomson.tsipinterface.document.dataservice.CacheDataService" />
+    <Method name="retrieve" />
+    <Bug pattern="REC_CATCH_EXCEPTION" />
+  </Match>
+  <Match>
+    <Class name="com.thomson.tsipinterface.registration.cntl.CustomCreateAccessController" />
+    <Bug pattern="BC_UNCONFIRMED_CAST" />
+  </Match>
+  <Match>
+    <Class name="com.thomson.tsipinterface.registration.cntl.CustomCreateAccessController" />
+    <Method name="process" />
+    <Bug pattern="DLS_DEAD_LOCAL_STORE" />
+  </Match>
+    <Match>
+    <Class name="com.thomson.tsipinterface.document.dataservice.JlsXMLProtoParser" />
+    <Method name="isDataHiding" />
+    <Bug pattern="DLS_DEAD_LOCAL_STORE" />
+  </Match>
+  <Match>
+    <Class name="com.thomson.tsipinterface.document.dataservice.JlsXMLParser" />
+    <Method name="isDataHiding" />
+    <Bug pattern="DLS_DEAD_LOCAL_STORE" />
+  </Match>
+  <Match>
+    <Class name="com.thomson.tsipinterface.web.servlets.search.SearchRequestParser" />
+    <Method name="parseRequestParameters" />
+    <Bug pattern="DLS_DEAD_LOCAL_STORE" />
+  </Match>
+  <Match>
+    <Class name="com.thomson.tsipinterface.web.servlets.BaseRetrievalRequestParser" />
+    <Method name="handleOptimizedassigneeTag" />
+    <Bug pattern="UPM_UNCALLED_PRIVATE_METHOD" />
+  </Match>
+  <Match>
+    <Class name="com.thomson.tsipinterface.registration.cntl.CustomCreateAccessController" />
+    <Bug pattern="SE_BAD_FIELD" />
+  </Match>
+  <Match>
+    <Class name="com.thomson.tsipinterface.search.ctrl.CombinedSearchController" />
+    <Bug pattern="SE_BAD_FIELD" />
+  </Match>
+  <Match>
+    <Class name="com.thomson.tsipinterface.impl.ctrl.ThrottlingControllerDecorator" />
+    <Bug pattern="SE_BAD_FIELD" />
+  </Match>
+  <Match>
+    <Class name="com.thomson.tsipinterface.customfields.ctrl.CustomCreateAccessController" />
+    <Bug pattern="SS_SHOULD_BE_STATIC" />
+  </Match>
+  <Match>
+    <Class name="com.thomson.tsipinterface.web.servlets.customfields.CustomDeleteResponseRenderer" />
+    <Bug pattern="BC_UNCONFIRMED_CAST" />
+  </Match>
+  <Match>
+    <Class name="com.thomson.tsipinterface.web.servlets.customfields.CustomEnumRetrieveResponseRenderer" />
+    <Bug pattern="BC_UNCONFIRMED_CAST" />
+  </Match>
+  <Match>
+    <Class name="com.thomson.tsipinterface.web.servlets.customfields.CustomEnumUpdateResponseRenderer" />
+    <Bug pattern="BC_UNCONFIRMED_CAST" />
+  </Match>
+  <Match>
+    <Class name="com.thomson.tsipinterface.web.servlets.smartextract.SmartExtractResponseRenderer" />
+    <Bug pattern="BC_UNCONFIRMED_CAST" />
+  </Match>
+  <Match>
+    <Class name="com.thomson.tsipinterface.smartextract.ctrl.SmartExtractControllerDecorator" />
+    <Bug pattern="BC_UNCONFIRMED_CAST" />
+  </Match>
+  <Match>
+    <Class name="com.thomson.tsipinterface.web.servlets.smartextract.SmartExtractRequestParser" />
+    <Bug pattern="UWF_FIELD_NOT_INITIALIZED_IN_CONSTRUCTOR" />
+  </Match>
+  <Match>
+    <Class name="com.thomson.tsipinterface.smartextract.ctrl.SmartExtractController" />
+    <Bug pattern="BC_UNCONFIRMED_CAST" />
+  </Match>
+    <Match>
+    <Class name="com.thomson.tsipinterface.impl.ctrl.ListrefServiceControllerDecorator" />
+    <Bug pattern="BC_UNCONFIRMED_CAST" />
+  </Match>
+  <Match>
+    <Class name="com.thomson.tsipinterface.web.servlets.customfields.CustomFieldsResponseRenderer" />
+    <Bug pattern="BC_UNCONFIRMED_CAST" />
+  </Match>
+  <Match>
+    <Class name="com.thomson.tsipinterface.customfields.ctrl.CustomCreateAccessController" />
+    <Bug pattern="BC_UNCONFIRMED_CAST" />
+  </Match>
+  <Match>
+    <Class name="com.thomson.tsipinterface.customfields.ctrl.CustomCreateAccessController" />
+    <Method name="process" />
+    <Bug pattern="DLS_DEAD_LOCAL_STORE" />
+  </Match>
+  <Match>
+    <Class name="com.thomson.tsipinterface.customfields.ctrl.CustomCreateAccessController" />
+    <Bug pattern="SE_BAD_FIELD" />
+  </Match>
+  <Match>
+    <Class name="com.thomson.tsipinterface.customfields.EnumField" />
+    <Bug pattern="UWF_UNWRITTEN_FIELD" />
+  </Match>
+  <Match>
+    <Class name="com.thomson.tsipinterface.impl.ctrl.SearchResultCachingControllerDecorator" />
+    <Bug pattern="UWF_UNWRITTEN_FIELD" />
+  </Match>
+  <Match>
+    <Class name="com.thomson.tsipinterface.document.xslt.CpcHandler" />
+    <Bug pattern="MS_PKGPROTECT" />
+  </Match>
+  <Match>
+    <Class name="com.thomson.tsipinterface.document.xslt.FldValuesAppender" />
+    <Bug pattern="MS_PKGPROTECT" />
+  </Match>
+  <Match>
+    <Class name="com.thomson.tsipinterface.customfields.dao.impl.CustomFieldsDaoImpl" />
+    <Bug pattern="STCAL_STATIC_SIMPLE_DATE_FORMAT_INSTANCE" />
+  </Match>
+  <Match>
+    <Class name="com.thomson.tsipinterface.customfields.dao.impl.CustomFieldsDaoImpl$4" />
+    <Method name="doInTransaction" />
+    <Bug pattern="REC_CATCH_EXCEPTION" />
+  </Match>
+  <Match>
+    <Class name="com.thomson.tsipinterface.customfields.dao.impl.CustomFieldsDaoImpl$5" />
+    <Method name="doInTransaction" />
+    <Bug pattern="REC_CATCH_EXCEPTION" />
+  </Match>
+  <Match>
+    <Class name="com.thomson.tsipinterface.document.dataservice.JlsXMLParser" />
+    <Method name="get" />
+    <Bug pattern="RCN_REDUNDANT_NULLCHECK_WOULD_HAVE_BEEN_A_NPE" />
+  </Match>
+  <Match>
+    <Class name="com.thomson.tsipinterface.web.servlets.BaseServiceResponseRenderer" />
+    <Method name="render" />
+    <Bug pattern="RCN_REDUNDANT_NULLCHECK_WOULD_HAVE_BEEN_A_NPE" />
+  </Match>
+  <Match>
+    <Class name="com.thomson.tsipinterface.customfields.dao.impl.CustomFieldsDaoImpl$6" />
+    <Method name="doInTransaction" />
+    <Bug pattern="REC_CATCH_EXCEPTION" />
+  </Match>
+  <Match>
+    <Class name="com.thomson.tsipinterface.customfields.fast.EnumFormatter$1" />
+    <Bug pattern="REC_CATCH_EXCEPTION" />
+  </Match>
+  <Match>
+    <Class name="com.thomson.tsipinterface.customfields.dao.impl.CustomFieldsDaoImpl$1" />
+    <Bug pattern="SIC_INNER_SHOULD_BE_STATIC_ANON" />
+  </Match>
+  <Match>
+    <Class name="com.thomson.tsipinterface.customfields.dao.impl.CustomFieldsDaoImpl$19" />
+    <Bug pattern="SIC_INNER_SHOULD_BE_STATIC_ANON" />
+  </Match>
+  <Match>
+    <Class name="com.thomson.tsipinterface.customfields.dao.impl.CustomFieldsDaoImpl$24" />
+    <Bug pattern="SIC_INNER_SHOULD_BE_STATIC_ANON" />
+  </Match>
+  <Match>
+    <Class name="com.thomson.tsipinterface.customfields.dao.impl.CustomFieldsDaoImpl$10" />
+    <Bug pattern="SIC_INNER_SHOULD_BE_STATIC_ANON" />
+  </Match>
+  <Match>
+    <Class name="com.thomson.tsipinterface.document.xslt.CpcGet$1" />
+    <Bug pattern="SIC_INNER_SHOULD_BE_STATIC_ANON" />
+  </Match>
+  <Match>
+    <Class name="com.thomson.tsipinterface.document.xslt.CpcHandler$1" />
+    <Bug pattern="SIC_INNER_SHOULD_BE_STATIC_ANON" />
+  </Match>
+  <Match>
+    <Class name="com.thomson.tsipinterface.document.xslt.FieldMetaExtensionDispatcher$1" />
+    <Bug pattern="SIC_INNER_SHOULD_BE_STATIC_ANON" />
+  </Match>
+  <Match>
+    <Class name="com.thomson.tsipinterface.document.xslt.FldValuesAppender$1" />
+    <Bug pattern="SIC_INNER_SHOULD_BE_STATIC_ANON" />
+  </Match>
+  <Match>
+    <Class name="com.thomson.tsipinterface.document.xslt.FldValuesGet$1" />
+    <Bug pattern="SIC_INNER_SHOULD_BE_STATIC_ANON" />
+  </Match>    
+  <Match>
+    <Class name="com.thomson.tsipinterface.customfields.dao.impl.CustomFieldsDaoImpl$12" />
+    <Bug pattern="SQL_PREPARED_STATEMENT_GENERATED_FROM_NONCONSTANT_STRING" />
+  </Match>
+  <Match>
+    <Class name="com.thomson.tsipinterface.customfields.dao.impl.CustomFieldsDaoImpl$15" />
+    <Bug pattern="SQL_PREPARED_STATEMENT_GENERATED_FROM_NONCONSTANT_STRING" />
+  </Match>
+  <Match>
+    <Class name="com.thomson.tsipinterface.customfields.dao.impl.CustomFieldsDaoImpl$16" />
+    <Bug pattern="SQL_PREPARED_STATEMENT_GENERATED_FROM_NONCONSTANT_STRING" />
+  </Match>
+  <Match>
+    <Class name="com.thomson.tsipinterface.customfields.dao.impl.CustomFieldsDaoImpl$10" />
+    <Bug pattern="SQL_PREPARED_STATEMENT_GENERATED_FROM_NONCONSTANT_STRING" />
+  </Match>
+  <Match>
+    <Class name="com.thomson.tsipinterface.alertcomparison.AlertComparisonDaoImpl$1" />
+    <Bug pattern="SQL_PREPARED_STATEMENT_GENERATED_FROM_NONCONSTANT_STRING" />
+  </Match>
+  <Match>
+    <Class name="com.thomson.tsipinterface.alertcomparison.AlertComparisonDaoImpl$3" />
+    <Bug pattern="SQL_PREPARED_STATEMENT_GENERATED_FROM_NONCONSTANT_STRING" />
+  </Match>
+  <Match>
+    <Class name="com.thomson.tsipinterface.search.DpciCountExpander$1" />
+    <Bug pattern="SQL_PREPARED_STATEMENT_GENERATED_FROM_NONCONSTANT_STRING" />
+  </Match>
+  <Match>
+    <Class name="com.thomson.tsipinterface.customfields.dao.impl.CustomFieldsDaoImpl$2" />
+    <Bug pattern="SIC_INNER_SHOULD_BE_STATIC_ANON" />
+  </Match>
+  <Match>
+    <Class name="com.thomson.tsipinterface.customfields.dao.impl.CustomFieldsDaoImpl$16" />
+    <Bug pattern="SIC_INNER_SHOULD_BE_STATIC_ANON" />
+  </Match>
+  <Match>
+    <Class name="com.thomson.tsipinterface.customfields.dao.impl.CustomFieldsDaoImpl$11" />
+    <Bug pattern="SIC_INNER_SHOULD_BE_STATIC_ANON" />
+  </Match>
+  <Match>
+    <Class name="com.thomson.tsipinterface.customfields.dao.impl.CustomFieldsDaoImpl$12" />
+    <Bug pattern="SIC_INNER_SHOULD_BE_STATIC_ANON" />
+  </Match>
+  <Match>
+    <Class name="com.thomson.tsipinterface.customfields.dao.impl.CustomFieldsDaoImpl$13" />
+    <Bug pattern="SIC_INNER_SHOULD_BE_STATIC_ANON" />
+  </Match>
+  <Match>
+    <Class name="com.thomson.tsipinterface.customfields.dao.impl.CustomFieldsDaoImpl$17" />
+    <Bug pattern="SIC_INNER_SHOULD_BE_STATIC_ANON" />
+  </Match>
+  <Match>
+    <Class name="com.thomson.tsipinterface.customfields.dao.impl.CustomFieldsDaoImpl$18" />
+    <Bug pattern="SIC_INNER_SHOULD_BE_STATIC_ANON" />
+  </Match>
+  <Match>
+    <Class name="com.thomson.tsipinterface.customfields.dao.impl.CustomFieldsDaoImpl$4" />
+    <Bug pattern="SIC_INNER_SHOULD_BE_STATIC_ANON" />
+  </Match>
+  <Match>
+    <Class name="com.thomson.tsipinterface.customfields.dao.impl.CustomFieldsDaoImpl$5" />
+    <Bug pattern="SIC_INNER_SHOULD_BE_STATIC_ANON" />
+  </Match>
+  <Match>
+    <Class name="com.thomson.tsipinterface.customfields.dao.impl.CustomFieldsDaoImpl$3" />
+    <Bug pattern="SIC_INNER_SHOULD_BE_STATIC_ANON" />
+  </Match>
+  <Match>
+    <Class name="com.thomson.tsipinterface.customfields.dao.impl.CustomFieldsDaoImpl$9" />
+    <Bug pattern="SIC_INNER_SHOULD_BE_STATIC_ANON" />
+  </Match>
+  <Match>
+    <Class name="com.thomson.tsipinterface.customfields.dao.impl.CustomFieldsDaoImpl$6" />
+    <Bug pattern="SIC_INNER_SHOULD_BE_STATIC_ANON" />
+  </Match>
+  <Match>
+    <Class name="com.thomson.tsipinterface.customfields.dao.impl.CustomFieldsDaoImpl$7" />
+    <Bug pattern="SIC_INNER_SHOULD_BE_STATIC_ANON" />
+  </Match>
+  <Match>
+    <Class name="com.thomson.tsipinterface.customfields.dao.impl.CustomFieldsDaoImpl$8" />
+    <Bug pattern="SIC_INNER_SHOULD_BE_STATIC_ANON" />
+  </Match>
+  <Match>
+    <Class name="com.thomson.tsipinterface.customfields.dao.impl.CustomFieldsDaoImpl$14" />
+    <Bug pattern="SIC_INNER_SHOULD_BE_STATIC_ANON" />
+  </Match>
+  <Match>
+    <Class name="com.thomson.tsipinterface.customfields.dao.impl.CustomFieldsDaoImpl$15" />
+    <Bug pattern="SIC_INNER_SHOULD_BE_STATIC_ANON" />
+  </Match>
+  <Match>
+    <Class name="com.thomson.tsipinterface.customfields.fast.EnumFormatter$1" />
+    <Bug pattern="SIC_INNER_SHOULD_BE_STATIC_ANON" />
+  </Match>
+  <Match>
+    <Class name="com.thomson.tsipinterface.customfields.dao.impl.CustomFieldsDaoImpl$22" />
+    <Bug pattern="SIC_INNER_SHOULD_BE_STATIC_ANON" />
+  </Match>
+  <Match>
+    <Class name="com.thomson.tsipinterface.customfields.dao.impl.CustomFieldsDaoImpl$23" />
+    <Bug pattern="SIC_INNER_SHOULD_BE_STATIC_ANON" />
+  </Match>
+  <Match>
+    <Class name="com.thomson.tsipinterface.customfields.dao.impl.CustomFieldsDaoImpl$CustomStopWatch" />
+    <Bug code="SIC" />
+  </Match>
+  <Match>
+    <Class name="com.thomson.tsipinterface.customfields.dao.impl.CustomFieldsDaoImpl$5$2" />
+    <Bug pattern="SQL_PREPARED_STATEMENT_GENERATED_FROM_NONCONSTANT_STRING" />
+  </Match>
+  <Match>
+    <Class name="com.thomson.tsipinterface.customfields.dao.impl.CustomFieldsDaoImpl$13" />
+    <Bug pattern="SQL_PREPARED_STATEMENT_GENERATED_FROM_NONCONSTANT_STRING" />
+  </Match>
+  <Match>
+    <Class name="com.thomson.tsipinterface.customfields.dao.impl.CustomFieldsDaoImpl$5" />
+    <Bug pattern="SQL_PREPARED_STATEMENT_GENERATED_FROM_NONCONSTANT_STRING" />
+  </Match>
+  <Match>
+    <Class name="com.thomson.tsipinterface.customfields.dao.impl.CustomFieldsDaoImpl$11" />
+    <Bug pattern="REC_CATCH_EXCEPTION" />
+  </Match>
+  <Match>
+    <Class name="com.thomson.tsipinterface.customfields.dao.impl.CustomFieldsDaoImpl$14" />
+    <Bug pattern="REC_CATCH_EXCEPTION" />
+  </Match>
+  <Match>
+    <Class name="com.thomson.tsipinterface.customfields.dao.impl.CustomFieldsDaoImpl$19" />
+    <Bug pattern="REC_CATCH_EXCEPTION" />
+  </Match>
+  <Match>
+    <Class name="com.thomson.tsipinterface.customfields.dao.impl.CustomFieldsDaoImpl$7" />
+    <Bug pattern="SQL_PREPARED_STATEMENT_GENERATED_FROM_NONCONSTANT_STRING" />
+  </Match>
+  <Match>
+    <Class name="com.thomson.tsipinterface.customfields.dao.impl.CustomFieldsDaoImpl$20" />
+    <Bug pattern="SQL_PREPARED_STATEMENT_GENERATED_FROM_NONCONSTANT_STRING" />
+  </Match>
+  <Match>
+    <Class name="com.thomson.tsipinterface.customfields.dao.impl.CustomFieldsDaoImpl$21" />
+    <Bug pattern="SQL_PREPARED_STATEMENT_GENERATED_FROM_NONCONSTANT_STRING" />
+  </Match>
+  <Match>
+    <Class name="com.thomson.tsipinterface.customfields.dao.impl.CustomFieldsDaoImpl$22" />
+    <Bug pattern="SQL_PREPARED_STATEMENT_GENERATED_FROM_NONCONSTANT_STRING" />
+  </Match>
+  <Match>
+    <Class name="com.thomson.tsipinterface.customfields.dao.impl.CustomFieldsDaoImpl$8" />
+    <Bug pattern="SQL_PREPARED_STATEMENT_GENERATED_FROM_NONCONSTANT_STRING" />
+  </Match>
+  <Match>
+    <Class name="com.thomson.tsipinterface.customfields.dao.impl.CustomFieldsDaoImpl" />
+    <Bug pattern="BC_IMPOSSIBLE_INSTANCEOF" />
+  </Match>
+   <Match>
+    <Class name="com.thomson.tsipinterface.customfields.dao.impl.CustomFieldsDaoImpl$23" />
+    <Bug pattern="REC_CATCH_EXCEPTION" />
+  </Match>
+   <Match>
+    <Class name="com.thomson.tsipinterface.customfields.dao.impl.CustomFieldsDaoImpl$24" />
+    <Bug pattern="REC_CATCH_EXCEPTION" />
+  </Match>
+  <Match>
+    <Class name="com.thomson.tsipinterface.document.dataservice.CacheRecordIterator" />
+    <Method name="normalizeDataToProtoObj" />
+    <Bug pattern="DM_CONVERT_CASE" />
+  </Match>
+  <Match>
+    <Class name="com.thomson.tsipinterface.document.dataservice.JlsXMLParser" />
+    <Method name="get" />
+    <Bug pattern="DM_CONVERT_CASE" />
+  </Match>
+  <Match>
+    <Class name="com.thomson.tsipinterface.idmapping.ctrl.IdMappingRequest" />
+    <Method name="getPanNumbers" />
+    <Bug pattern="EI_EXPOSE_REP" />
+  </Match>
+  <Match>
+    <Class name="com.thomson.tsipinterface.idmapping.ctrl.IdMappingRequest" />
+    <Method name="setPanNumbers" />
+    <Bug pattern="EI_EXPOSE_REP2" />
+  </Match>
+  <Match>
+    <Class name="com.thomson.tsipinterface.customfields.dao.impl.CustomFieldsDaoImpl$CallableDaoImpl" />
+    <Bug pattern="SIC_INNER_SHOULD_BE_STATIC" />
+  </Match>
+   <Match>
+    <Class name="com.thomson.tsipinterface.search.brs.broker.StreamDocIdsource$StreamIterator" />
+    <Bug pattern="SIC_INNER_SHOULD_BE_STATIC" />
+  </Match>
+   <Match>
+    <Class name="com.thomson.tsipinterface.search.brs.searchfilter.SfGrouper$Pipe" />
+    <Bug pattern="SIC_INNER_SHOULD_BE_STATIC" />
+  </Match>
+  <Match>
+    <Class name="com.thomson.tsipinterface.customfields.dao.impl.CustomFieldsDaoImpl$20" />
+    <Bug pattern="SIC_INNER_SHOULD_BE_STATIC_ANON" />
+  </Match>
+  <Match>
+    <Class name="com.thomson.tsipinterface.customfields.dao.impl.CustomFieldsDaoImpl$21" />
+    <Bug pattern="SIC_INNER_SHOULD_BE_STATIC_ANON" />
+  </Match>
+  <Match>
+    <Class name="com.thomson.tsipinterface.customfields.dao.impl.CustomFieldsDaoImpl$25" />
+    <Bug pattern="SIC_INNER_SHOULD_BE_STATIC_ANON" />
+  </Match>
+  <Match>
+    <Class name="com.thomson.tsipinterface.customfields.dao.impl.CustomFieldsDaoImpl$26" />
+    <Bug pattern="SIC_INNER_SHOULD_BE_STATIC_ANON" />
+  </Match>
+  <Match>
+    <Class name="com.thomson.tsipinterface.customfields.dao.impl.CustomFieldsDaoImpl$27" />
+    <Bug pattern="SIC_INNER_SHOULD_BE_STATIC_ANON" />
+  </Match>
+  <Match>
+    <Class name="com.thomson.tsipinterface.customfields.dao.impl.CustomFieldsDaoImpl$28" />
+    <Bug pattern="SIC_INNER_SHOULD_BE_STATIC_ANON" />
+  </Match>
+  <Match>
+    <Class name="com.thomson.tsipinterface.customfields.dao.impl.CustomFieldsDaoImpl$29" />
+    <Bug pattern="SIC_INNER_SHOULD_BE_STATIC_ANON" />
+  </Match>
+  <Match>
+    <Class name="com.thomson.tsipinterface.family.filter.hierarchy.expand.HierarchicalFamilyExpandBroker$1" />
+    <Bug pattern="SIC_INNER_SHOULD_BE_STATIC_ANON" />
+  </Match>
+  <Match>
+    <Class name="com.thomson.tsipinterface.idmapping.OracleMiscellaneousDaoImpl$1" />
+    <Bug pattern="SIC_INNER_SHOULD_BE_STATIC_ANON" />
+  </Match>
+  <Match>
+    <Class name="com.thomson.tsipinterface.idmapping.OracleMiscellaneousDaoImpl$2" />
+    <Bug pattern="SIC_INNER_SHOULD_BE_STATIC_ANON" />
+  </Match>
+  <Match>
+    <Class name="com.thomson.tsipinterface.search.brs.searchfilter.SfSearcher" />
+    <Method name="truncateListref" />
+    <Bug pattern="BC_UNCONFIRMED_CAST" />
+  </Match>
+  <Match>
+    <Class name="com.thomson.tsipinterface.web.servlets.customfields.CustomClearFieldValueResponseRenderer" />
+    <Method name="printResponseHeaderContents" />
+    <Bug pattern="BC_UNCONFIRMED_CAST" />
+  </Match>
+  <Match>
+    <Class name="com.thomson.tsipinterface.web.servlets.customfields.CustomFieldValueCountResponseRenderer" />
+    <Method name="printResponseHeaderContents" />
+    <Bug pattern="BC_UNCONFIRMED_CAST" />
+  </Match>
+  <Match>
+    <Class name="com.thomson.tsipinterface.web.servlets.customfields.CustomFieldValueCountResponseRenderer" />
+    <Method name="renderBodyContents" />
+    <Bug pattern="BC_UNCONFIRMED_CAST" />
+  </Match>
+  <Match>
+    <Class name="com.thomson.tsipinterface.coverage.ctrl.CoverageController" />
+    <Bug pattern="BC_UNCONFIRMED_CAST" />
+  </Match>
+  <Match>
+    <Class name="com.thomson.tsipinterface.search.brs.searchfilter.SfGrouper" />
+    <Method name="getGroupResultDetails" />
+    <Bug pattern="DB_DUPLICATE_BRANCHES" />
+  </Match>
+  <Match>
+    <Class name="com.thomson.tsipinterface.snapshot.SnapshotStrategyImpl1" />
+    <Method name="makeSnapshot" />
+    <Bug pattern="DB_DUPLICATE_BRANCHES" />
+  </Match>
+  <Match>
+    <Class name="com.thomson.tsipinterface.family.filter.hierarchy.expand.HierarchicalFamilyExpandBroker" />
+    <Method name="makeFamExpandListref" />
+    <Bug pattern="OS_OPEN_STREAM_EXCEPTION_PATH" />
+  </Match>
+  <Match>
+    <Class name="com.thomson.tsipinterface.family.filter.hierarchy.collapse.CollapseHierarchicalToSelectedFilter" />
+    <Method name="makeHierarchyHoldInRs" />
+    <Bug pattern="OS_OPEN_STREAM_EXCEPTION_PATH" />
+  </Match>
+  <Match>
+    <Class name="com.thomson.tsipinterface.web.servlets.classification.ClassificationProtoReponseRenderer" />
+    <Method name="renderOutput" />
+    <Bug pattern="OS_OPEN_STREAM_EXCEPTION_PATH" />
+  </Match>
+  <Match>
+    <Class name="com.thomson.tsipinterface.family.FamilyUtils"/>
+    <Method name="mapToProperties"/>
+    <Parameter name="prop"/>
+    <Bug pattern="IP_PARAMETER_IS_DEAD_BUT_OVERWRITTEN"/>
+  </Match>
+  <Match>
+    <Class name="com.thomson.tsipinterface.customfields.dao.impl.CustomFieldsDaoImpl$11" />
+    <Bug pattern="SQL_PREPARED_STATEMENT_GENERATED_FROM_NONCONSTANT_STRING" />
+  </Match>
+  <Match>
+    <Class name="com.thomson.tsipinterface.customfields.dao.impl.CustomFieldsDaoImpl$14" />
+    <Bug pattern="SQL_PREPARED_STATEMENT_GENERATED_FROM_NONCONSTANT_STRING" />
+  </Match>
+  <Match>
+    <Class name="com.thomson.tsipinterface.customfields.dao.impl.CustomFieldsDaoImpl$23" />
+    <Bug pattern="SQL_PREPARED_STATEMENT_GENERATED_FROM_NONCONSTANT_STRING" />
+  </Match>
+  <Match>
+    <Class name="com.thomson.tsipinterface.customfields.dao.impl.CustomFieldsDaoImpl$24" />
+    <Bug pattern="SQL_PREPARED_STATEMENT_GENERATED_FROM_NONCONSTANT_STRING" />
+  </Match>
+  <Match>
+    <Class name="com.thomson.tsipinterface.customfields.dao.impl.CustomFieldsDaoImpl$25" />
+    <Bug pattern="SQL_PREPARED_STATEMENT_GENERATED_FROM_NONCONSTANT_STRING" />
+  </Match>
+  <Match>
+    <Class name="com.thomson.tsipinterface.idmapping.OracleMiscellaneousDaoImpl$1" />
+    <Bug pattern="SQL_PREPARED_STATEMENT_GENERATED_FROM_NONCONSTANT_STRING" />
+  </Match>
+  <Match>
+    <Class name="com.thomson.tsipinterface.document.dataservice.ST32DataItem" />
+    <Bug pattern="RV_RETURN_VALUE_IGNORED" />
+  </Match>
+  <Match>
+    <Class name="com.thomson.tsipinterface.customfields.ctrl.CustomUpdateResponse" />
+    <Bug pattern="EI_EXPOSE_REP" />
+  </Match>
+  <Match>
+    <Class name="com.thomson.tsipinterface.search.ctrl.CombineSearchUnit" />
+    <Bug pattern="EI_EXPOSE_REP" />
+  </Match>
+  <Match>
+    <Class name="com.thomson.tsipinterface.summary.SummaryRanges" />
+    <Bug pattern="EI_EXPOSE_REP" />
+  </Match>
+  <Match>
+    <Class name="com.thomson.tsipinterface.customfields.ctrl.CustomUpdateResponse" />
+    <Bug pattern="EI_EXPOSE_REP2" />
+  </Match>
+  <Match>
+    <Class name="com.thomson.tsipinterface.search.ctrl.CombineSearchUnit" />
+    <Bug pattern="EI_EXPOSE_REP2" />
+  </Match>
+  <Match>
+    <Class name="com.thomson.tsipinterface.summary.SummaryRanges" />
+    <Bug pattern="EI_EXPOSE_REP2" />
+  </Match>
+  <Match>
+    <Class name="com.thomson.tsipinterface.search.resultset.KeyHit" />
+    <Bug pattern="HE_EQUALS_USE_HASHCODE" />
+  </Match>
+  <Match>
+    <Class name="com.thomson.tsipinterface.web.servlets.BaseRetrievalResponseRenderer" />
+    <Bug pattern="EC_UNRELATED_TYPES" />
+  </Match>
+  <Match>
+    <Class name="com.thomson.tsipinterface.web.servlets.BaseRetrievalProtoResponseRenderer" />
+    <Bug pattern="EC_UNRELATED_TYPES" />
+  </Match>  
+  <Match>
+    <Class name="com.thomson.tsipinterface.document.dataservice.ImageUrlProvider" />
+    <Bug pattern="ST_WRITE_TO_STATIC_FROM_INSTANCE_METHOD" />
+  </Match>
+  <Match>
+    <Class name="com.thomson.tsipinterface.family.FamilyUtils" />
+    <Bug pattern="ST_WRITE_TO_STATIC_FROM_INSTANCE_METHOD" />
+  </Match>
+  <Match>
+    <Class name="com.thomson.tsipinterface.document.dataservice.CacheDataService" />
+    <Bug pattern="ST_WRITE_TO_STATIC_FROM_INSTANCE_METHOD" />
+  </Match>
+   <Match>
+    <Class name="com.thomson.tsipinterface.document.dataservice.ST32DirectDataService" />
+    <Bug pattern="ST_WRITE_TO_STATIC_FROM_INSTANCE_METHOD" />
+  </Match>
+  <Match>
+    <Class name="com.thomson.tsipinterface.application.cache.FsCache" />
+    <Bug pattern="SWL_SLEEP_WITH_LOCK_HELD" />
+  </Match>
+  <Match>
+    <Class name="com.thomson.tsipinterface.customfields.dao.impl.CustomFieldsDaoImpl" />
+    <Bug pattern="ODR_OPEN_DATABASE_RESOURCE" />
+  </Match>
+  <Match>
+    <Class name="com.thomson.tsipinterface.search.SearchResult" />
+    <Bug pattern="CN_IDIOM_NO_SUPER_CALL" />
+  </Match>
+  <Match>
+    <Class name="com.thomson.tsipinterface.filter.collapsetohierarchy.CitationHierarchicalResultSet" />
+    <Bug pattern="CN_IDIOM_NO_SUPER_CALL" />
+  </Match>
+  <Match>
+    <Class name="com.thomson.tsipinterface.document.dataservice.CacheRecordIterator" />
+    <Bug pattern="MS_SHOULD_BE_FINAL" />
+  </Match>
+  <Match>
+    <Class name="com.thomson.tsipinterface.customfields.dao.impl.CustomFieldsDaoImpl$30" />
+    <Bug pattern="SIC_INNER_SHOULD_BE_STATIC_ANON" />
+  </Match>
+  <Match>
+    <Class name="com.thomson.tsipinterface.customfields.dao.impl.CustomFieldsDaoImpl$31" />
+    <Bug pattern="SIC_INNER_SHOULD_BE_STATIC_ANON" />
+  </Match>
+  <Match>
+    <Class name="com.thomson.tsipinterface.alertcomparison.AlertComparisonDaoImpl$1" />
+    <Bug pattern="SIC_INNER_SHOULD_BE_STATIC_ANON" />
+  </Match>
+  <Match>
+    <Class name="com.thomson.tsipinterface.alertcomparison.AlertComparisonDaoImpl$3" />
+    <Bug pattern="SIC_INNER_SHOULD_BE_STATIC_ANON" />
+  </Match>
+  <Match>
+    <Class name="com.thomson.tsipinterface.alertcomparison.AlertComparisonDaoImpl$4" />
+    <Bug pattern="SIC_INNER_SHOULD_BE_STATIC_ANON" />
+  </Match>
+  <Match>
+    <Class name="com.thomson.tsipinterface.classification.ctrl.ClassificationController$1" />
+    <Bug pattern="SIC_INNER_SHOULD_BE_STATIC_ANON" />
+  </Match>
+  <Match>
+    <Class name="com.thomson.tsipinterface.citation.filter.hierarchy.expand.ExpandCitationsBroker" />
+    <Method name="fillCitations" />
+    <Bug pattern="REC_CATCH_EXCEPTION" />
+  </Match>
+  <Match>
+    <Class name="com.thomson.tsipinterface.citation.filter.hierarchy.expand.ExpandDpciCitationsBroker" />
+    <Method name="fillCitations" />
+    <Bug pattern="REC_CATCH_EXCEPTION" />
+  </Match>
+  <Match>
+    <Class name="com.thomson.tsipinterface.web.servlets.idmapping.IdMappingRequestParser" />
+    <Method name="parseRequestParameters" />
+    <Bug pattern="DM_CONVERT_CASE" />
+  </Match>
+  <Match>
+    <Class name="com.thomson.tsipinterface.idmapping.ctrl.IdMappingController" />
+    <Method name="process" />
+    <Bug pattern="REC_CATCH_EXCEPTION" />
+  </Match>
+  <Match>
+    <Class name="com.thomson.tsipinterface.snapshot.SnapshotStrategyImpl1" />
+    <Method name="makeSnapshot" />
+    <Bug pattern="REC_CATCH_EXCEPTION" />
+  </Match>
+  <Match>
+    <Class name="com.thomson.tsipinterface.web.TimerThread" />
+    <Bug pattern="ST_WRITE_TO_STATIC_FROM_INSTANCE_METHOD" />
+  </Match>
+  <Match>
+    <Class name="com.thomson.tsipinterface.document.xslt.CpcHandler$1" />
+    <Bug pattern="ST_WRITE_TO_STATIC_FROM_INSTANCE_METHOD" />
+  </Match>
+  <Match>
+    <Class name="com.thomson.tsipinterface.web.TimerThread" />
+    <Bug pattern="DLS_DEAD_LOCAL_STORE" />
+  </Match>
+    <Match>
+    <Class name="com.thomson.tsipinterface.web.TimerThread" />
+    <Bug pattern="REC_CATCH_EXCEPTION" />
+  </Match>
+  <Match>
+    <Class name="com.thomson.tsipinterface.family.filter.hierarchy.expand.HierarchicalFamilyExpandBroker" />
+    <Method name="makeExpandedResultSet_assignee" />
+    <Bug pattern="REC_CATCH_EXCEPTION" />
+  </Match>
+  <Match>
+    <Class name="com.thomson.tsipinterface.web.servlets.BaseServiceResponseRenderer" />
+    <Method name="render" />
+    <Bug pattern="REC_CATCH_EXCEPTION" />
+  </Match>
+  <Match>
+    <Class name="com.thomson.tsipinterface.web.TimerThread" />
+    <Bug pattern="OS_OPEN_STREAM_EXCEPTION_PATH" />
+  </Match>
+  <Match>
+    <Class name="com.thomson.tsipinterface.web.TimerThread" />
+    <Bug pattern="OS_OPEN_STREAM" />
+  </Match>
+  <Match>
+    <Class name="com.thomson.tsipinterface.web.TimerThread" />
+    <Bug pattern="NP_NULL_ON_SOME_PATH" />
+  </Match>
+  <Match>
+    <Class name="com.thomson.tsipinterface.document.dataservice.ImageUrlProvider" />
+    <Bug pattern="NP_NULL_ON_SOME_PATH" />
+  </Match>
+</FindBugsFilter>

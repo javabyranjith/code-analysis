@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<project basedir="." default="findbugs" name="static-code-analysis-ant-war">
+
+	<property environment="env" />
+	<property file="${basedir}/build.properties" />
+
+	<target name="init">
+		<mkdir dir="build/classes" />
+		<mkdir dir="dist" />
+	</target>
+
+	<path id="compile.classpath">
+		<fileset dir="WebContent/WEB-INF/lib">
+			<include name="*.jar" />
+		</fileset>
+	</path>
+
+	<target name="compile" depends="init">
+		<javac destdir="build/classes" debug="true" srcdir="src">
+			<classpath refid="compile.classpath" />
+		</javac>
+	</target>
+
+	<target name="war" depends="clean, compile">
+		<war destfile="dist/${war.name}.war" webxml="WebContent/WEB-INF/web.xml">
+			<fileset dir="WebContent" />
+			<lib dir="WebContent/WEB-INF/lib" />
+			<classes dir="build/classes" />
+		</war>
+
+		<!--deploy war-->
+
+	</target>
+
+	<target name="clean">
+		<delete dir="dist" />
+		<delete dir="build" />
+	</target>
+
+	<taskdef name="findbugs" classname="edu.umd.cs.findbugs.anttask.FindBugsTask" classpath="${findbugs.ant.classpath}" />
+	<target name="findbugs" depends="war">
+		<tstamp>
+			<format property="date" pattern="yyyy-dd" unit="hour" />
+			<format property="time" pattern="hh-mm" unit="hour" />
+		</tstamp>
+		<findbugs home="${findbugs.dir}" output="html" timeout="3600000" reportLevel="${findbugs.reportLevel}" effort="${findbugs.effort}" failOnError="true" jvmargs="${findbugs.jvmargs}" outputFile="${findbugs.report.file}-${date}-${time}.html" stylesheet="${findbugs.xsl}" debug="false" projectName="static-code-analysis-ant-war" excludeFilter="${findbugs.filter}">
+
+			<sourcePath path="${basedir}/src" />
+			<class location="build/classes" />
+		</findbugs>
+
+		<!--Deploy to Tomcat-->
+		<copy file="${findbugs.report.file}-${date}-${time}.html" todir="${findbugs.report.deploy}" />
+		<echo message="Findbugs Report Deployed at ${findbugs.report.deploy}" />
+	</target>
+
+
+	<taskdef resource="checkstyletask.properties" classpath="${checkstyle.classpath}" />
+	<target name="checkstyle" description="Checkstyle Violations">
+		<tstamp>
+			<format property="date" pattern="yyyy-MM-dd" unit="hour" />
+			<format property="time" pattern="hh-mm" unit="hour" />
+		</tstamp>
+
+		<checkstyle config="${checkstyle.rules.file}" failureProperty="checkstyle.failure" failOnViolation="false">
+			<fileset dir="${source.files.dir}" includes="**/*.java" />
+			<formatter type="xml" usefile="yes" tofile="${checkstyle.report.file}-${date}-${time}.xml" />
+		</checkstyle>
+
+		<!--Generate HTML Report-->
+		<xslt in="${checkstyle.report.file}-${date}-${time}.xml" out="${checkstyle.report.file}-${date}-${time}.html" style="${checkstyle.xsl}" />
+
+		<!--Deploy to Tomcat-->
+		<copy file="${checkstyle.report.file}-${date}-${time}.html" todir="${checkstyle.report.deploy}" />
+		<echo message="Checkstyle Report Deployed at ${checkstyle.report.deploy}" />
+	</target>
+
+</project>

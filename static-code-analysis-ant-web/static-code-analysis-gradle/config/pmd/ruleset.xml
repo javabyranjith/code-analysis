@@ -1,0 +1,277 @@
+<?xml version="1.0"?>
+
+<ruleset name="All Java Rules" xmlns="http://pmd.sourceforge.net/ruleset/2.0.0"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://pmd.sourceforge.net/ruleset/2.0.0 http://pmd.sourceforge.net/ruleset_2_0_0.xsd">
+    <description>Every Java Rule in PMD</description>
+
+    <!-- See https://pmd.github.io/pmd-6.0.1/pmd_devdocs_making_rulesets.html -->
+    <!-- See https://pmd.github.io/pmd-6.0.1/pmd_rules_java.html -->
+
+    <exclude-pattern>.*/exclude/.*</exclude-pattern>
+    <exclude-pattern>.*/generated/.*</exclude-pattern>
+    <exclude-pattern>.*/snowball/.*</exclude-pattern>
+
+    <!-- Rules which enforce generally accepted best practices. -->
+    <rule ref="category/java/bestpractices.xml">
+        <!-- Priority: Medium
+             Avoid constants in interfaces. Interfaces should define types, constants are implementation
+             details better placed in classes or enums. See Effective Java, item 19. -->
+        <exclude name="ConstantsInInterface" />
+
+        <!-- Priority: Medium High
+             Whenever using a log level, one should check if the loglevel is actually enabled, or otherwise
+             skip the associate String creation and manipulation. -->
+        <exclude name="GuardLogStatement" />
+
+        <!-- Priority: Medium
+             Reports loops that can be safely replaced with the foreach syntax.
+             The rule considers loops over lists, arrays and iterators. -->
+        <!-- Rule throws NPE in PMD v6.0.1. -->
+        <exclude name="ForLoopCanBeForeach" />
+    </rule>
+
+    <!-- Rules which enforce a specific coding style. -->
+    <rule ref="category/java/codestyle.xml">
+        <!-- Priority: Medium
+             Abstract classes should be named ‘AbstractXXX’. -->
+        <exclude name="AbstractNaming" />
+
+        <!-- Priority: Medium
+             Each class should declare at least one constructor. -->
+        <exclude name="AtLeastOneConstructor" />
+
+        <!-- Priority: Normal
+             Avoid using final local variables, turn them into fields. -->
+        <exclude name="AvoidFinalLocalVariable" />
+
+        <!-- Priority: Medium
+             It is a good practice to call super() in a constructor. If super() is not called but another constructor
+             (such as an overloaded constructor) is called, this rule will not report it. -->
+        <exclude name="CallSuperInConstructor" />
+
+        <!-- Priority: Medium
+             Use explicit scoping instead of accidental usage of default package private level.
+             The rule allows methods and fields annotated with Guava’s @VisibleForTesting. -->
+        <exclude name="CommentDefaultAccessModifier" />
+
+        <!-- Priority: Medium
+             To avoid mistakes if we want that a Method, Constructor, Field or Nested class have a default access modifier
+             we must add a comment at the beginning of it’s declaration. By default the comment must be /* default */,
+             if you want another, you have to provide a regexp. -->
+        <exclude name="DefaultPackage" />
+
+        <!-- Priority: Medium
+             This rule detects when a constructor is not necessary; i.e., when there is only one constructor,
+             it’s public, has an empty body, and takes no arguments. -->
+        <exclude name="UnnecessaryConstructor" />
+
+        <!-- Priority: Medium
+             Avoid negation within an “if” expression with an “else” clause.
+             For example, rephrase: if (x != y) diff(); else same(); as: if (x == y) same(); else diff();. -->
+        <exclude name="ConfusingTernary" />
+
+        <!-- Priority: Medium
+             A local variable assigned only once can be declared final. -->
+        <exclude name="LocalVariableCouldBeFinal" />
+
+        <!-- Priority: Medium
+             Fields, formal arguments, or local variable names that are too long can make the code difficult to follow. -->
+        <exclude name="LongVariable" />
+
+        <!-- Priority: Medium
+             A method argument that is never re-assigned within the method can be declared final. -->
+        <exclude name="MethodArgumentCouldBeFinal" />
+
+        <!-- Priority: Medium
+             Fields, local variables, or parameter names that are very short are not helpful to the reader. -->
+        <exclude name="ShortVariable" />
+
+        <!-- Priority: Medium
+             A method should have only one exit point, and that should be the last statement in the method. -->
+        <exclude name="OnlyOneReturn" />
+
+        <!-- Priority: Medium
+             Avoid the creation of unnecessary local variables. -->
+        <exclude name="UnnecessaryLocalBeforeReturn" />
+
+        <!-- Priority: Medium Low
+             Useless parentheses should be removed. -->
+        <exclude name="UselessParentheses" />
+
+        <!-- Priority: High
+             A variable naming conventions rule - customize this to your liking.
+             Currently, it checks for final variables that should be fully capitalized and non-final variables
+             that should not include underscores. -->
+        <exclude name="VariableNamingConventions" />
+    </rule>
+
+    <!-- Rules that help you discover design issues. -->
+    <rule ref="category/java/design.xml">
+        <!-- Priority: Medium
+             Avoid catching generic exceptions such as NullPointerException, RuntimeException, Exception in try-catch block. -->
+        <exclude name="AvoidCatchingGenericException" />
+
+        <!-- Priority: High
+             Avoid throwing certain exception types.
+             Rather than throw a raw RuntimeException, Throwable, Exception, or Error,
+             use a subclassed exception or error instead. -->
+        <exclude name="AvoidThrowingRawExceptionTypes" />
+
+        <!-- Priority: Medium
+             Sometimes two consecutive ‘if’ statements can be consolidated by separating
+             their conditions with a boolean short-circuit operator. -->
+        <exclude name="CollapsibleIfStatements" />
+
+        <!-- Priority: Medium
+             Data Classes are simple data holders, which reveal most of their state, and without complex functionality.
+             The lack of functionality may indicate that their behaviour is defined elsewhere,
+             which is a sign of poor data-behaviour proximity. -->
+        <exclude name="DataClass" />
+
+        <!-- Priority: Medium
+             The Law of Demeter is a simple rule, that says “only talk to friends”.
+             It helps to reduce coupling between classes or objects. -->
+        <exclude name="LawOfDemeter" />
+
+        <!-- Priority: Medium
+             Avoid using classes from the configured package hierarchy outside of the package hierarchy, except when
+             using one of the configured allowed classes. -->
+        <exclude name="LoosePackageCoupling" />
+
+        <!-- Priority: Medium
+             A method/constructor shouldn’t explicitly throw the generic java.lang.Exception, since it is unclear which
+             exceptions that can be thrown from the methods. It might be difficult to document and understand such
+             vague interfaces. Use either a class derived from RuntimeException or a checked exception. -->
+        <exclude name="SignatureDeclareThrowsException" />
+
+        <!-- Priority: Medium
+             Avoid unnecessary if-then-else statements when returning a boolean.
+             The result of the conditional test can be returned instead. -->
+        <exclude name="SimplifyBooleanReturns" />
+
+        <!-- Priority: Medium
+             For classes that only have static methods, consider making them utility classes. -->
+        <exclude name="UseUtilityClass" />
+    </rule>
+
+    <!-- Change default values...
+    The complexity of methods directly affects maintenance costs and readability.
+    Concentrating too much decisional logic in a single method makes its behaviour hard to read and change. -->
+    <rule ref="category/java/design.xml/CyclomaticComplexity">
+        <properties>
+            <!-- Total class complexity reporting threshold (default: 80) -->
+            <property name="classReportLevel" value="80" />
+            <!-- Cyclomatic complexity reporting threshold (default: 10) -->
+            <property name="methodReportLevel" value="20" />
+        </properties>
+    </rule>
+
+    <!-- Change default values...
+    This rule uses the NCSS (Non-Commenting Source Statements) metric to determine the number of lines of code in a class,
+    method or constructor. -->
+    <rule ref="category/java/design.xml/NcssCount">
+        <properties>
+            <!-- Metric reporting threshold for classes (default: 250) -->
+            <property name="classReportLevel" value="250" />
+            <!-- Metric reporting threshold for methods (default: 12) -->
+            <property name="methodReportLevel" value="36" />
+        </properties>
+    </rule>
+
+    <!-- Change default values...
+    A class with too many methods is probably a good suspect for refactoring,
+    in order to reduce its complexity and find a way to have more fine grained objects. -->
+    <rule ref="category/java/design.xml/TooManyMethods">
+        <properties>
+            <!-- The method count reporting threshold (default: 10) -->
+            <property name="maxmethods" value="20" />
+        </properties>
+    </rule>
+
+    <!-- Rules that are related to code documentation. -->
+    <rule ref="category/java/documentation.xml">
+        <!-- Priority: Medium
+             Uncommented Empty Constructor finds instances where a constructor does not contain statements, but there
+             is no comment. By explicitly commenting empty constructors it is easier to distinguish between intentional
+             (commented) and unintentional empty constructors. -->
+        <exclude name="UncommentedEmptyConstructor" />
+    </rule>
+
+    <rule ref="category/java/documentation.xml/CommentRequired">
+        <properties>
+            <property name="fieldCommentRequirement" value="Ignored" />
+        </properties>
+    </rule>
+
+    <!-- Change default values... -->
+    <rule ref="category/java/documentation.xml/CommentSize">
+        <properties>
+            <property name="maxLines" value="25" />
+            <property name="maxLineLength" value="160" />
+        </properties>
+    </rule>
+
+    <!-- Rules to detect constructs that are either broken, extremely confusing or prone to runtime errors. -->
+    <rule ref="category/java/errorprone.xml">
+
+        <!-- Priority: Medium
+             Avoid assignments in operands; this can make code more complicated and harder to read. -->
+        <exclude name="AssignmentInOperand" />
+
+        <!-- Priority: Medium High
+             Using a branching statement as the last part of a loop may be a bug, and/or is confusing.
+             Ensure that the usage is not a bug, or consider using another approach. -->
+        <exclude name="AvoidBranchingStatementAsLastInLoop" />
+
+        <!-- Priority: Medium
+             If a class is a bean, or is referenced by a bean directly or indirectly it needs to be serializable.
+             Member variables need to be marked as transient, static, or have accessor methods in the class. -->
+        <exclude name="BeanMembersShouldSerialize" />
+
+        <!-- Priority: Medium
+             The dataflow analysis tracks local definitions, undefinitions and references to variables on different
+             paths on the data flow. From those informations there can be found various problems. -->
+        <exclude name="DataflowAnomalyAnalysis" />
+
+        <!-- Priority: Medium
+             An empty statement (or a semicolon by itself) that is not used as the sole body of a ‘for’ or ‘while’ loop is
+             probably a bug. It could also be a double semicolon, which has no purpose and should be removed. -->
+        <exclude name="EmptyStatementNotInLoop" />
+
+         <!-- Priority: Medium
+              TA non-case label (e.g. a named break/continue label) was present in a switch statement.
+              This legal, but confusing. It is easy to mix up the case labels and the non-case labels. -->
+        <exclude name="NonCaseLabelInSwitchStatement" />
+
+         <!-- Priority: Medium
+              Assigning a “null” to a variable (outside of its declaration) is usually bad form.
+              Sometimes, this type of assignment is an indication that the programmer doesn’t
+              completely understand what is going on in the code. -->
+        <exclude name="NullAssignment" />
+
+        <!-- Priority: Medium
+             When doing String.toLowerCase()/toUpperCase() conversions, use Locales to avoids problems with languages
+             that have unusual conventions, i.e. Turkish. -->
+        <exclude name="UseLocaleWithCaseConversions" />
+    </rule>
+
+    <!-- Rules that flag issues when dealing with multiple threads of execution. -->
+    <rule ref="category/java/multithreading.xml">
+        <!-- Priority: Medium
+             Since Java5 brought a new implementation of the Map designed for multi-threaded access,
+             you can perform efficient map reads without blocking other threads. -->
+        <exclude name="UseConcurrentHashMap" />
+    </rule>
+
+    <!-- Rules that flag suboptimal code. -->
+    <rule ref="category/java/performance.xml">
+        <!-- Priority: Medium
+             The use of the ‘+=’ operator for appending strings causes the JVM to create and use an internal StringBuffer.
+             If a non-trivial number of these concatenations are being used then the explicit use of a StringBuilder or
+             threadsafe StringBuffer is recommended to avoid this. -->
+        <exclude name="UseStringBufferForStringAppends" />
+    </rule>
+
+</ruleset>
+

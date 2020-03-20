@@ -1,0 +1,141 @@
+/**
+ *
+ * Static code analysis example with Checkstyle, Findbugs, PMD and SonarQube
+ * 
+ * @author Ranjith Sekar
+ * @since 2018, 19 June
+ *
+ */
+
+plugins {
+    id 'eclipse'
+    id 'java'
+    id 'maven'
+    id 'com.adarshr.test-logger' version '1.1.2'
+   
+    // Code Analysis
+    id 'checkstyle'
+    id 'findbugs'
+    id 'pmd'
+    id "org.sonarqube" version "2.6.2"
+    id 'jacoco'
+}
+
+sourceCompatibility = '1.8'
+targetCompatibility = '1.8'
+
+task wrapper(type: Wrapper){
+         gradleVersion = '4.8'
+     }
+
+/**
+* CHECKSTYLE
+*/
+checkstyle {
+    ignoreFailures = true
+    sourceSets = [ sourceSets.main ]
+    showViolations = false
+    toolVersion = '8.8'
+    checkstyleTest.enabled = false
+}
+
+tasks.withType(Checkstyle) {
+    reports {
+        html.enabled = true
+        xml.enabled = false
+    }
+}
+
+
+/**
+* FINDBUGS
+*/
+findbugs{
+    ignoreFailures=true
+    findbugsTest.enabled=false
+    toolVersion = '3.0.1'
+}
+tasks.withType(FindBugs) {
+    reports {
+        xml.enabled = false
+        html.enabled = true
+    }
+}
+
+/**
+* PMD
+*/
+pmd {
+    ignoreFailures = true
+    pmdTest.enabled=false
+    ruleSetFiles = files('config/pmd/ruleset.xml')
+    toolVersion = '6.1.0'
+}
+tasks.withType(Pmd) {
+    reports {
+        html.enabled = true
+        xml.enabled = false
+    }
+}
+
+/**
+* JACOCO
+*/
+jacoco{
+    toolVersion = '0.8.1'
+}
+jacocoTestCoverageVerification {
+    violationRules {
+        rule {
+            limit {
+                minimum = 0.5
+            }
+        }
+    }
+}
+jacocoTestReport {
+     reports {
+        csv.enabled false
+        xml.enabled false
+        html {
+            enabled true
+            destination file("$buildDir/reports/jacoco")
+        }
+    }
+
+    executionData(test)
+
+}
+tasks.build.dependsOn(jacocoTestReport)
+
+test{
+    jacoco{
+        append = false
+        destinationFile = file("$buildDir/jacoco/jacocoTest.exec")
+        classDumpDir = file("$buildDir/jacoco/classpathdumps")
+    }
+}
+
+repositories {
+    jcenter { url "http://jcenter.bintray.com/" }
+    mavenCentral()
+}
+
+
+dependencies {
+    testImplementation 'junit:junit:4.12'
+}
+
+testlogger {
+    showExceptions true
+    showSummary true
+    slowThreshold 5000
+}
+
+sonarqube{
+    check
+    properties {
+        property 'sonar.projectName', 'Code-Analysis-Gradle' // This is the display project name
+        property 'sonar.host.url','http://localhost:9000/' // This is the Sonar Server
+    }
+}
